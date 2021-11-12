@@ -1589,6 +1589,15 @@ p, h1, h2, h3, h4, h5, ul {
   }
 }
 
+@media screen and (max-width: 400px) {
+  .slider__contents {
+    -webkit-transform: scale(0.54235);
+            transform: scale(0.54235);
+    top: 20px;
+    left: -40px;
+  }
+}
+
 .discover__box {
   height: 310px;
 }
