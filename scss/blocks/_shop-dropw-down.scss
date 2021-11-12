@@ -1,0 +1,110 @@
+.shop-dropw-down {
+    display: none;
+    position:absolute;
+    top:60px;
+    left: 0;
+    padding: 10px 20px 20px;
+    border-radius: 5px;
+    background: $color-primary;
+    box-shadow: 0 4px 4px 0;
+    width: 295px;
+    z-index: 200;
+    
+  
+
+    &::before{
+        content: "";
+        position:absolute;
+        top: -5px;
+        left: 30px;
+        width: 0;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-bottom: 5px solid #fff;
+    }
+
+    &__item{
+        &:nth-child(1) a::before{
+            content: "\f81e";
+        }
+
+        &:nth-child(2) a::before{
+            content: "\f814";
+        }
+
+        &:nth-child(3) a::before{
+            content: "\f7fc";
+        }
+
+        &:nth-child(4) a::before{
+            content: "\f818";
+        }
+
+        &:nth-child(5) a::before{
+            content: "\f5d1";
+        }
+
+        &:nth-child(6) a::before{
+            content: "\f45f";
+        }
+
+        &:nth-child(7) a::before{
+            content: "\f810";
+        }
+
+        &:nth-child(8) a::before{
+            content: "\f06c";
+        }
+
+        &:nth-child(9) a::before{
+            content: "\f646";
+        }
+        
+        &:not(:last-child){
+            border-bottom: 1px solid #e4e4e4;
+        }
+    }
+
+    &__link {
+        position: relative;
+        width: 100%;
+        display: inline-block;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 400;
+        color: #000;
+        padding: 13px 0;
+        padding-left: 35px;
+        transition: color 0.4s ease;
+
+        &:hover{
+            color: $color-general;
+        }
+
+        &:hover::before{
+            color: $color-general;
+        }
+
+        &::before{
+            content: "";
+            font-family:"Font Awesome 5 Pro";
+            width: 20px;
+            height: 20px;
+            position:absolute;
+            left: 0;
+            top: 8px;
+            font-size: 20px;
+            color: #aaa;
+        }
+    }
+}
+
+.show-shop-drop-down{
+    display: block;
+}
+
+@media screen and (max-width:992px){
+    .shop-dropw-down{
+        width: 100%;
+    }
+}

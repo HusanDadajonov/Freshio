@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact us</title>
+  <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="shortcut icon" type="image/x-icon" href="https://demo73leotheme.b-cdn.net/prestashop/at_freshio/img/favicon.ico?1603358296">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+    <!-- start hero -->
+    <section class="hero">
+        <a class="back-to-top" href="#"><i class="bi bi-chevron-double-up"></i></a>
+        <button class="hero__theme-option">theme options</button>
+        <div class="hero__login login">
+      <div class="offcanvas login__canvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <header class="login__header">  
+          <div class="d-flex align-items-center justify-content-between">
+            <a href="index.html">
+              <img src="img/logo.jpg" alt="logo">
+            </a>
+            <button type="button" class="login__close-btn btn-close p-0" aria-label="Close" data-bs-dismiss="offcanvas"></button>
+          </div>
+        </header>
+        <div class="login__exiting exiting">
+          <h3 class="exiting__title">Existing Account Login</h3>
+          <form class="exiting__form" action="https://echo.htmlacademy.ru/" method="post">
+            <label class="exiting__label" for="user-email">
+              <input class="exiting__inp" type="email" name="user-email" id="user-email" required placeholder="Email Address" autocomplete="off">
+            </label>
+            <label class="exiting__label" for="user-pasw">
+              <input class="exiting__inp exiting__inp--password" type="password" name="user-passw" id="user-pasw" required placeholder="Password" autocomplete="off">
+            </label>
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <div class="d-flex align-items-center">
+                <input class="exiting__inp exiting__inp--check" type="checkbox" name="remember" id="remember" autocomplete="off">
+                <label class="exiting__label exiting__label-check" for="remember">Remember Me</label>
+              </div>
+              <a class="exiting__link text-decoration-none" href="#" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Forgot Password ?</a>
+            </div>
+            <button class="exiting__btn btn fw-bold">Login</button>
+          </form>
+          <div class="exiting__accordion accordion pt-3 pb-4" id="accordionExample">
+            <div class="exiting__accordion-item accordion-item border-0">
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <h3 class="exiting__accordion-title mb-2 text-center">Reset Password</h3>
+                <form action="https://echo.htmlacademy.ru/" method="post">
+                  <label class="exiting__label" for="reset-pasw-email">
+                    <input class="exiting__inp" type="email" name="reset-pasw-email" id="reset-pasw-email" required placeholder="Email Address" autocomplete="off">
+                  </label>
+                  <button class="exiting__btn btn fw-bold">Reset Password</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="login__social-network social-network">
+          <h2 class="social-network__title exiting__title">Connect with Social Networks</h2>
+          <ul class="d-flex align-items-center list-unstyled social-network__list">
+            <li class="social-network__item">
+              <a class="social-network__link" href="#" target="_blank"><i class='bx bxl-facebook'></i></a>
+            </li>
+            <li class="social-network__item">
+              <a class="social-network__link" href="#" target="_blank"><i class='bx bxl-google'></i></a>
+            </li>
+            <li class="social-network__item">
+              <a class="social-network__link" href="#" target="_blank"><i class='bx bxl-twitter' ></i></a>
+            </li>
+          </ul>
+        </div>  
+        <div class="login__register register">
+          <h2 class="register__title exiting__title">New Account Register</h2>
+          <form class="exiting__form" action="https://echo.htmlacademy.ru/" method="post">
+            <label class="exiting__label" for="first-name">
+              <input class="exiting__inp" type="text" name="first-name" id="first-name" required placeholder="First Name" autocomplete="off">
+            </label>
+            <label class="exiting__label" for="last-name">
+              <input class="exiting__inp" type="text" name="last-name" id="last-name" required placeholder="Last Name" autocomplete="off">
+            </label>
+            <label class="exiting__label" for="email">
+              <input class="exiting__inp" type="email" name="email" id="email" required placeholder="Email Address" autocomplete="off">
+            </label>
+            <label class="exiting__label" for="password">
+              <input class="exiting__inp exiting__inp--password" type="password" name="password" id="password" required placeholder="Password" autocomplete="off">
+            </label>
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <div class="d-flex align-items-center">
+                <input class="exiting__inp exiting__inp--check" type="checkbox" name="remember" id="agree" autocomplete="off">
+                <label class="exiting__label exiting__label-check" for="agree">I agree to the terms.</label>
+              </div>
+            </div>
+            <button class="exiting__btn btn fw-bold">Create an Account</button>
+          </form>
+        </div>
+        <div class="login__language language">
+          <div class="row align-center">
+            <div class="col-6 p-0">
+              <h2 class="language__title">Language:</h2>
+              <ul class="row align-items-center language__list list-unstyled">
+                <li class="language__item language__item--active p-0">
+                  <a class="language__link" href="#">
+                    <img class="language__flug" src="img/america.jpg" alt="america-img">
+                  </a>
+                </li>
+                <li class="language__item p-0">
+                  <a class="language__link" href="#">
+                    <img class="language__flug" src="img/france.jpg" alt="america-img">
+                  </a>
+                </li>
+                <li class="language__item p-0">
+                  <a class="language__link" href="#">
+                    <img class="language__flug" src="img/russia.jpg" alt="america-img">
+                  </a>
+                </li>
+                <li class="language__item p-0">
+                  <a class="language__link" href="#">
+                    <img class="language__flug" src="img/france-2.jpg" alt="america-img">
+                  </a>
+                </li>
+                <li class="language__item p-0">
+                  <a class="language__link" href="#">
+                    <img class="language__flug" src="img/canada.jpg" alt="america-img">
+                  </a>
+                </li>
+                <li class="language__item p-0">
+                  <a class="language__link" href="#">
+                    <img class="language__flug" src="img/lastflag.jpg" alt="america-img">
+                  </a>
+                </li>
+              </ul>
+              <div>
+                <h2 class="language__title">Currency:</h2>
+                <div class="language__money-box">
+                  <span class="language__money">eur</span>
+                  <span class="language__money language__money--active">usd</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 p-0 language__sign-in sign-in">
+              <ul class="sign-in__list list-unstyled ps-3">
+                <li class="sign-in__item">
+                  <a class="sign-in__link" href="#">Sign in</a>
+                </li>
+                <li class="sign-in__item">
+                  <a class="sign-in__link" href="#">My account</a>
+                </li>
+                <li class="sign-in__item">
+                  <a class="sign-in__link" href="#">Wishlist (0)</a>
+                </li>
+                <li class="sign-in__item">
+                  <a class="sign-in__link" href="#">Compare (0)</a>
+                </li>
+                <li class="sign-in__item">
+                  <a class="sign-in__link" href="#">Checkout</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+        </div>
+        <div class="hero__bottom-menu bottom-menu">
+      <ul class="d-flex align-items-center justify-content-between bottom-menu__list list-unstyled">
+        <li  class="bottom-menu__item col-3 p-0">
+          <button class="bottom-menu__btn" type="button"><i class="bi bi-shop-window"></i></button>
+          <h3 class="bottom-menu__title">shop</h3>
+        </li>
+        <li  class="bottom-menu__item col-3 p-0">
+          <button class="bottom-menu__btn" type="button"><i class="bi bi-heart"></i></button>
+          <h3  class="bottom-menu__title">wishlist</h3>
+        </li>
+        <li  class="bottom-menu__item col-3 p-0" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+          <button class="bottom-menu__btn" type="button"><i class="bi bi-person"></i></button>
+          <h3  class="bottom-menu__title">Account</h3>
+        </li>
+        <li  class="bottom-menu__item col-3 p-0">
+          <button class="bottom-menu__btn bottom-menu__btn--search" type="button"><i class="bi bi-search"></i><i class="fs-3  bi bi-x"></i></button>
+          <h3  class="bottom-menu__title">Search</h3>
+        </li>
+      </ul>
+        </div>
+        <div class="hero__header-top header-top">
+      <div class="container">
+        <div class="row align-items-center justify-content-between ">
+          <div class="p-0 col-xl-6 col-lg-6">
+            <p class="header-top__desc text-black">FREE express international delivery + EASY returns</p>
+          </div>
+          <ul class="p-0 header-top__list justify-content-end d-flex align-items-center list-unstyled col-xl-6 col-lg-6">
+            <li class="header-top__item">
+              <a class="header-top__link text-decoration-none text-black text-uppercase" href="about.html">about</a>
+            </li>
+            <li class="header-top__item">
+              <a class="header-top__link text-decoration-none text-black text-uppercase" href="#">faq</a>
+            </li>
+            <li class="header-top__item">
+              <a class="header-top__link text-decoration-none text-black text-uppercase" href="#">contact us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+        </div>
+        <div class="main-container">
+      <header class="hero__header header">
+        <div class="container">
+          <div class="d-flex align-items-center justify-content-between">
+            <button class="p-0 header__burger-btn"  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">☰</button>
+            <a class="p-0 header__logo-link" href="index.html">
+              <img class="header__logo" src="img/logo.jpg" alt="site-logo">
+            </a>
+            <div class="header__form-box">
+              <form class="p-0 header__form  d-flex align-items-center jusitfy-content-between" action="https://echo.htmlacademy.ru/"  method="post">
+                <label class="header__label" for="search-inp">
+                  <input class="header__inp border-0" type="search" name="searched-keyword" id="search-inp" placeholder="Enter Keyword..." autocomplete="off" required>
+                </label>
+                <button class="header__btn btn fw-bold text-black p-0">Search</button>
+              </form>
+            </div>
+            <ul class="p-0 header__list list-unstyled d-flex align-items-center justify-content-end">
+              <li class="header__item position-relative"><button class="header__btns header__btns--user border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="bi bi-person"></i></button></li>
+              <li class="header__item position-relative"><button class="header__btns header__btns--heart border-0" type="button" ><i class="bi bi-heart"></i></button><span class="header__count">0</span></li>
+              <li class="header__item position-relative"><button class="header__btns header__btns--shop border-0" type="button"><i class="bi bi-basket"></i></button><span class="header__count">0</span></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container">
+        <nav class="hero__nav nav position-relative">
+          <span class="nav__opacity"></span>
+          <div class="d-flex align-items-center">
+            <div class="d-flex align-items-center nav__contents">
+              <button class="nav__burger-btn p-0"><i class="bi bi-list"></i></button>
+              <h3 class="nav__title">Shop by Department</h3>
+              <div>
+                  <div class="nav__shop-dropw-down shop-dropw-down">
+                    <ul class="list-unstyled shop-dropw-down__list">
+                  <li class="shop-dropw-down__item">
+                    <a class="shop-dropw-down__link" href="#">Fruits & Vegetables</a>
+                  </li>
+                  <li class="shop-dropw-down__item">
+                    <a class="shop-dropw-down__link" href="#">Supplyments</a>
+                  </li>
+                  <li class="shop-dropw-down__item">
+                    <a class="shop-dropw-down__link" href="#">Dairy Bread & Eggs</a>
+                  </li>
+                  <li class="shop-dropw-down__item">
+                    <a class="shop-dropw-down__link" href="#">Package Foods</a>
+                  </li>
+                  <li class="shop-dropw-down__item">
+                    <a class="shop-dropw-down__link" href="#">Beauty & Care</a>
+                  </li>
+                  <li class="shop-dropw-down__item">
+                    <a class="shop-dropw-down__link" href="#">Health & Wellness</a>
+                  </li>
+                  <li class="shop-dropw-down__item">
+                    <a class="shop-dropw-down__link" href="#">Baby & Infants</a>
+                  </li>
+                  <li class="shop-dropw-down__item">
+                    <a class="shop-dropw-down__link" href="#">Home Care</a>
+                  </li>
+                  <li class="shop-dropw-down__item">
+                    <a class="shop-dropw-down__link" href="#">Hot Offers</a>
+                  </li>
+                    </ul>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="nav__list-box">
+              <button class="nav__close-btn login__close-btn border-0">Close</button>
+              <ul class="nav__list list-unstyled d-flex align-items-center">
+                <li class="nav__item position-relative">
+                  <a class="nav__linki" href="index.html">Home</a>
+                  <div class="nav__drow-down drow-down">
+                    <ul class="drow-down__list list-unstyled">
+                      <li class="drow-down__item">
+                        <a class="drow-down__link" href="#">Home 1</a>
+                      </li>
+                      <li class="drow-down__item">
+                        <a class="drow-down__link" href="index.html">Home 2</a>
+                      </li>
+                      <li class="drow-down__item">
+                        <a class="drow-down__link" href="#">Home 3</a>
+                      </li>
+                      <li class="drow-down__item">
+                        <a class="drow-down__link" href="#">Home 4</a>
+                      </li>
+                      <li class="drow-down__item">
+                        <a class="drow-down__link" href="#">Home 5</a>
+                      </li>
+                      <li class="drow-down__item">
+                        <a class="drow-down__link" href="#">Home 6</a>
+                      </li>
+                      <li class="drow-down__item">
+                        <a class="drow-down__link" href="#">Home 7</a>
+                      </li>
+                      <li class="drow-down__item">
+                        <a class="drow-down__link" href="#">Home 8</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li> 
+                <li class="nav__item">
+                  <a class="nav__linki" href="#">Shop</a>
+                  <div class="shopping-dropw-down nav__drow-down drow-down">
+                    <div class="row">
+                      <ul class="col-3 shopping-dropw-down__list drow-down__list list-unstyled">
+                        <li class="drow-down__item shopping-dropw-down__item">
+                          <h2 class="shopping-dropw-down__title" href="#">Categories 1</a>
+                        </li>
+                        <li class="drow-down__item shopping-dropw-down__item">
+                          <a class="drow-down__link shopping-dropw-down__link" href="#">Vegatable</a>
+                        </li>
+                        <li class="drow-down__item shopping-dropw-down__item">
+                          <a class="drow-down__link shopping-dropw-down__link" href="#">Tomato</a>
+                        </li>
+                        <li class="drow-down__item shopping-dropw-down__item">
+                          <a class="drow-down__link shopping-dropw-down__link" href="#">Cabbage</a>
+                        </li>
+                        <li class="drow-down__item shopping-dropw-down__item">
+                          <a class="drow-down__link shopping-dropw-down__link" href="#">Juice</a>
+                        </li>
+                        <li class="drow-down__item shopping-dropw-down__item">
+                          <a class="drow-down__link shopping-dropw-down__link" href="#">Meat</a>
+                        </li>
+                      </ul>
+                      <ul class="col-3 shopping-dropw-down__list drow-down__list list-unstyled">
+                        <li class="drow-down__item shopping-dropw-down__item">
+                          <h2 class="shopping-dropw-down__title" href="#">Categories 2</a>
+                        </li>
+                        <li class="drow-down__item shopping-dropw-down__item">
+                          <a class="drow-down__link shopping-dropw-down__link" href="#">Beef</a>
+                        </li>
+                        <li class="drow-down__item shopping-dropw-down__item">
+                          <a class="drow-down__link shopping-dropw-down__link" href="#">Pork</a>
+                        </li>
+                        <li class="drow-down__item shopping-dropw-down__item">
+                          <a class="drow-down__link shopping-dropw-down__link" href="#">Coconut</a>
+                        </li>
+                        <li class="drow-down__item shopping-dropw-down__item">
+                          <a class="drow-down__link shopping-dropw-down__link" href="#">Broccoli</a>
+                        </li>
+                        <li class="drow-down__item shopping-dropw-down__item">
+                          <a class="drow-down__link shopping-dropw-down__link" href="#">Fish</a>
+                        </li>
+                      </ul>
+                      <ul class="col-3 shopping-dropw-down__list drow-down__list list-unstyled">
+                        <li class="drow-down__item shopping-dropw-down__item">
+                          <h2 class="shopping-dropw-down__title" href="#">Categories 3</a>
+                        </li>
+                        <li class="drow-down__item shopping-dropw-down__item">
+                          <a class="drow-down__link shopping-dropw-down__link" href="#">Seafood</a>
+                        </li>
+                        <li class="drow-down__item shopping-dropw-down__item">
+                          <a class="drow-down__link shopping-dropw-down__link" href="#">Octopus</a>
+                        </li>
+                        <li class="drow-down__item shopping-dropw-down__item">
+                          <a class="drow-down__link shopping-dropw-down__link" href="#">Fish</a>
+                        </li>
+                        <li class="drow-down__item shopping-dropw-down__item">
+                          <a class="drow-down__link shopping-dropw-down__link" href="#">Pork</a>
+                        </li>
+                        <li class="drow-down__item shopping-dropw-down__item">
+                          <a class="drow-down__link shopping-dropw-down__link" href="#">More</a>
+                        </li>
+                      </ul>
+                      <ul class="col-3 shopping-dropw-down__list drow-down__list list-unstyled">
+                        <li class="drow-down__item shopping-dropw-down__item">
+                          <h2 class="shopping-dropw-down__title" href="#">Categories 4</a>
+                        </li>
+                        <li class="drow-down__item shopping-dropw-down__item">
+                          <a class="drow-down__link shopping-dropw-down__link" href="#">Vegatable</a>
+                        </li>
+                        <li class="drow-down__item shopping-dropw-down__item">
+                          <a class="drow-down__link shopping-dropw-down__link" href="#">Fresh Meat</a>
+                        </li>
+                        <li class="drow-down__item shopping-dropw-down__item">
+                          <a class="drow-down__link shopping-dropw-down__link" href="#">Fruit & Nut Gifts</a>
+                        </li>
+                        <li class="drow-down__item shopping-dropw-down__item">
+                          <a class="drow-down__link shopping-dropw-down__link" href="#">Fresh Berries</a>
+                        </li>
+                        <li class="drow-down__item shopping-dropw-down__item">
+                          <a class="drow-down__link shopping-dropw-down__link" href="#">Fat Freezing</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__linki" href="#">Pages</a>
+                  <div class="shopping-dropw-down pages-dropw-down nav__drow-down drow-down">
+                    <div class="row">
+                      <ul class="d-flex pages-dropw-down__list shopping-dropw-down__list drow-down__list list-unstyled">
+                        <li class="pages-dropw-down__item drow-down__item shopping-dropw-down__item">
+                          <a class="pages-dropw-down__link drow-down__link shopping-dropw-down__link" href="#">
+                            <img class="pages-dropw-down__img" src="img/pages-img1.jpg" alt="pages-img">
+                          </a>
+                        </li>
+                        <li class="pages-dropw-down__item drow-down__item shopping-dropw-down__item">
+                          <a class="pages-dropw-down__link drow-down__link shopping-dropw-down__link" href="#">
+                            <img class="pages-dropw-down__img" src="img/pages-img2.jpg" alt="pages-img">
+                          </a>
+                        </li>
+                        <li class="pages-dropw-down__item drow-down__item shopping-dropw-down__item">
+                          <a class="pages-dropw-down__link drow-down__link shopping-dropw-down__link" href="#">
+                            <img class="pages-dropw-down__img" src="img/pages-img3.jpg" alt="pages-img">
+                          </a>
+                        </li>
+                        <li class="pages-dropw-down__item drow-down__item shopping-dropw-down__item">
+                          <a class="pages-dropw-down__link drow-down__link shopping-dropw-down__link" href="#">
+                            <img class="pages-dropw-down__img" src="img/pages-img4.jpg" alt="pages-img">
+                          </a>
+                        </li>
+                        <li class="pages-dropw-down__item drow-down__item shopping-dropw-down__item">
+                          <a class="pages-dropw-down__link drow-down__link shopping-dropw-down__link" href="#">
+                            <img class="pages-dropw-down__img" src="img/pages-img5.jpg" alt="pages-img">
+                          </a>
+                        </li>
+                        <li class="pages-dropw-down__item drow-down__item shopping-dropw-down__item">
+                          <a class="pages-dropw-down__link drow-down__link shopping-dropw-down__link" href="#">
+                            <img class="pages-dropw-down__img" src="img/pages-img6.jpg" alt="pages-img">
+                          </a>
+                        </li>
+                        <li class="pages-dropw-down__item drow-down__item shopping-dropw-down__item">
+                          <a class="pages-dropw-down__link drow-down__link shopping-dropw-down__link" href="#">
+                            <img class="pages-dropw-down__img" src="img/pages-img7.jpg" alt="pages-img">
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__linki" href="#">Blog</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__linki" href="#">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="breadcrumb">
+        <div class="container">
+            <div class="breadcrumb__bg">
+                <div class="breadcrumb__texts d-flex alig-items-center">
+                    <a class="breadcrumb__link" href="index.html">Home</a>
+                    <i class="breadcrumb__icon bi bi-chevron-right"></i>
+                    <a class="breadcrumb__link" href="contact.html">Contact us</a>
+                </div>
+            </div>
+        </div>
+      </div>
+        </div>
+    </section>
+    <!-- end hero -->
+
+    <!-- start main -->
+    <main>
+
+        <!-- start contact -->
+        <section class="contact">
+            <div class="main-container">
+                <div class="container">
+                    <div class="contact__row row justify-content-between">
+                        <div class="contact__col contact__information information col-sm-4 col-md-3 ps-0">
+                            <h2 class="information__title">Store information</h2>
+                            <div class="information__location d-flex flex-column">
+                                <span class="information__place">Freshio</span>
+                                <span class="information__place">France</span>
+                            </div>
+                            <div class="information__email">
+                                <div class="information__email--box d-flex flex-column">
+                                    <span class="information__emal--label">Email us:</span>
+                                    <a class="information__email--link text-decoration-none" href="mailto:demo@demo.com">demo@demo.com</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact__col col-sm-12 col-md-8 col-lg-9 pe-0">
+                            <div class="contact__form-block">
+                                <form action="https://echo.htmlacademy.ru/" method="post">
+                                    <h2 class="contact__title">Contact us</h2>
+                                    <div class="contact__inputs-box">
+                                    <div class="contact__form-flex d-flex align-items-center">
+                                            <label class="contact__label" for="contact__select">Subject</label>
+                                            <select class="contact__select" name="service__selected" id="contact__select" required>
+                                                <option class="contact__option" value="2">Customer service</option>
+                                                <option class="contact__option" value="1">Webmaster</option>
+                                            </select>
+                                    </div>
+                                    <div class="contact__form-flex d-flex align-items-center">
+                                            <label class="contact__label" for="email">Email address</label>
+                                            <input class="contact__inp" type="email" name="user-email" id="email" autocomplete="off" placeholder="your@email.com" required>
+                                    </div>
+                                    <div class="contact__form-flex position-relative d-flex align-items-center">
+                                        <label class="contact__label" for="file">Attachment</label>
+                                        <div class="contact__inp contact__inp--file-bg position-relative">
+                                                <input class="contact__inp--file" type="file" id="file" name="selected-file" required>
+                                                <label class="contact__label-btn" for="file">Choose file</label>
+                                        </div>
+                                        <span class="contact__span">optional</span>
+                                    </div>
+                                    <div class="contact__form-flex d-flex align-items-center">
+                                        <label class="contact__label" for="message">Message</label>
+                                        <textarea class="contact__textarea" name="user-message" id="message" placeholder="How can we help?"></textarea>
+                                    </div>
+                                    </div>
+                                    <button class="contact__btn">Send</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end contact -->
+
+        <!-- start info -->
+        <section class="info">
+            <div class="main-container">
+                <div class="info__wrapper">
+                    <div class="info__flex d-flex justify-content-between alig-items-center">
+                        <div class="d-flex info__contents alig-items-center">
+                            <div class="info__tel-box">
+                                <h3 class="info__title">Call us 24/7</h3>
+                                <a class="info__tel" href="tel:+18008866991">(1800)-88-66-991</a>
+                            </div>
+                            <div class="info__email-box">
+                                <h3 class="info__title">email us</h3>
+                                <a class="info__email" href="mailto:demo@demo.com">demo@demo.com</a>
+                            </div>
+                        </div>
+                        <div class="info__cards">
+                            <img class="info__img" src="img/info-cards.png" alt="cards">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end info -->
+
+    </main>
+    <!-- end main -->
+  
+    <!-- start footer -->
+    <footer class="footer">
+        <div class="main-container">
+        <div class="container">
+            <div class="footer__row row pt-5">
+            <div class="footer__contents col-xl-3 col-lg-3 col-md-4 col-sm-12">
+                <h2 class="footer__title">Store Location</h2>
+                <p class="footer__desc">9066 Green Lake Drive Chevy<br>Chase, MD 20815</p>
+                <div class="d-flex flex-column">
+                <span class="footer__day">Monday - Saturday:</span>
+                <time class="footer__time mb-2" datetime="2021-05-12">8:00 am - 4:00pm</time>
+                <span class="footer__day">Sunday:</span>
+                <time  class="footer__time" datetime="2021-05-12">9:00 am - 5:00pm</time>
+                </div>
+            </div>
+            <ul class="footer__contents list-unstyled footer__list col-xl-2 col-lg-2 col-md-4 col-sm-12 ">
+                <li class="footer__item">
+                <h2 class="footer__title">Information</h2>
+                </li>
+                <li class="footer__item">
+                <a class="footer__link" href="index.html">About us</a>
+                </li>
+                <li class="footer__item">
+                <a class="footer__link" href="#">Blog</a>
+                </li>
+                <li class="footer__item">
+                <a class="footer__link" href="#">Check out</a>
+                </li>
+                <li class="footer__item">
+                <a class="footer__link" href="contact.html">Contact</a>
+                </li>
+                <li class="footer__item">
+                <a class="footer__link" href="#">Service</a>
+                </li>
+            </ul>
+            <ul class="footer__contents list-unstyled footer__list col-xl-2 col-lg-2 col-md-4 col-sm-12 ">
+                <li class="footer__item">
+                <h2 class="footer__title">My Account</h2>
+                </li>
+                <li class="footer__item">
+                <a class="footer__link" href="#">My Account</a>
+                </li>
+                <li class="footer__item">
+                <a class="footer__link" href="#">Contact</a>
+                </li>
+                <li class="footer__item">
+                <a class="footer__link" href="#">Shopping cart</a>
+                </li>
+                <li class="footer__item">
+                <a class="footer__link" href="#">Shop</a>
+                </li>
+            </ul>
+            <ul class="footer__contents list-unstyled footer__list col-xl-2 col-lg-2 col-md-4 col-sm-12 ">
+                <li class="footer__item">
+                <h2 class="footer__title">categories</h2>
+                </li>
+                <li class="footer__item">
+                <a class="footer__link" href="#">Fruits & Vegetables</a>
+                </li>
+                <li class="footer__item">
+                <a class="footer__link" href="#">Dairy Products</a>
+                </li>
+                <li class="footer__item">
+                <a class="footer__link" href="#">Package Foods</a>
+                </li>
+                <li class="footer__item">
+                <a class="footer__link" href="#">Beverage</a>
+                </li>
+                <li class="footer__item">
+                <a class="footer__link" href="#">Beverage</a>
+                </li>
+            </ul>
+            <div class="footer__contents col-xl-3 col-lg-3 col-md-4 col-sm-12">
+                <h2 class="footer__title">accept payment</h2>
+                <img class="footer__img mb-5" src="img/footer-cards.png" alt="footer-cards">
+                <h3 class="footer__title">follow us</h3>
+            </div>
+            </div>
+            <div class="footer__bottom">
+            <p class="footer__bottom--copyright">Copyright © 2021 <span>Freshio</span>.All Rights Reserved.</p>
+            </div>
+        </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+
+    <!-- script start -->
+    <script src="js/main.js"></script>
+    <!-- script end -->
+</body>
+</html>

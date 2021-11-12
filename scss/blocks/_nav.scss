@@ -1,0 +1,211 @@
+.nav {
+    background: $color-only-texts no-repeat center center;
+
+    &__burger-btn {
+        @include flex();
+        justify-content: center;
+        background: none;
+        border: none;
+        margin-right: 15px;
+        color: #fff;
+    }
+
+    &__contents{
+        padding: 20px 80px 20px 30px;
+        cursor: pointer;
+        position: relative;
+
+        &::before{
+            content: "";
+            width: 1px;
+            height: 30px;
+            background: #3b6c58;
+            position:absolute;
+            right: 0;
+            top: 50%;
+            transform: translate(0,-50%);
+        }
+    }
+
+    &__burger-btn i{
+        font-size: 19px;
+    }
+
+    &__opacity{
+        position:fixed;
+        left: 0;
+        top: 0;
+        z-index: -1;
+        background: #000;
+        opacity: 0;
+        @include w-h100
+    }
+
+    .add-opacity{
+        z-index: 100;
+        opacity: 0.7;
+    }
+
+    &__title {
+        font-size: 15px;
+        color: #FFF;
+        cursor: pointer;
+        font-weight: 400;
+        line-height: 1.1;
+    }
+
+    &__list{
+        margin-left: 70px !important;
+    }
+
+    &__item{
+        &:not(:last-child){
+            margin-right: 35px;
+        }
+
+        &:hover .drow-down{
+            opacity: 1;
+            transform: translate(0,0);
+            visibility: visible;
+        }
+        
+        &:nth-child(1) a,
+        &:nth-child(2) a,
+        &:nth-child(3) a{
+            padding-right: 16px;
+            position: relative;
+
+            &::before{
+                content: "\ecad";
+                width: 13px;
+                height: 13px;
+                font-family: boxicons!important;
+                position:absolute;
+                right: 0;
+                top: 50%;
+                transform: translate(0,-70%);
+            }
+        }
+    }
+
+    &__linki {
+        display: inline-block;
+        width: 60px !important;
+        text-decoration: none;
+        font-size: 14px;
+        color: #fff;
+        background-color: transparent;
+        font-weight: 700;
+        padding: 20px 0;
+        transition: color 0.4s ease;
+
+        &:hover{
+            color: $color-general;
+        }
+    }
+
+    &__close-btn{
+        display: none;
+        background: none;
+        color: $color-general;
+        margin-left: auto;
+        font-size: 14px;
+        width: auto !important;
+        padding: 15px;
+
+        &:hover::before{
+            color: $color-general !important; 
+        }
+
+        &::before{
+            width: 20px;
+            height: 20px;
+            color: $color-general;
+            font-size: 20px;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            transform: translate(0,-1px);
+        }
+    }
+
+   
+}
+
+@media screen and (max-width:992px){
+
+    .nav__close-btn{
+       display: flex;
+       align-items: center;
+    }
+    .nav__list-box{
+        position:fixed;
+        left: 0;
+        top: 0;
+        width: 300px;
+        height: 100%;
+        background: $color-only-texts;
+        z-index: 100;
+        transform: translate(-100%,0);
+        transition: transform 0.4s ease;
+    }
+
+    .show-nav-list-box{
+        transform: translate(0,0);
+    }
+
+    .nav__list{
+        flex-direction: column;
+        margin: 0 !important;
+    }
+    .nav__item{
+        margin: 0 !important;
+        width: 100%;
+        border-bottom: 1px solid #073522;
+        
+
+        &:nth-child(1){
+            border-top: 1px solid #073522;
+        }
+
+        &:nth-child(1) a::before,
+        &:nth-child(2) a::before,
+        &:nth-child(3) a::before{
+            content: "\f280";
+            width: 48px;
+            height: 48px;
+            font-family: bootstrap-icons !important;
+            font-size: 12px;
+            top: 0;
+            right: 0;
+            transform: translate(0,0);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-left:1px solid #073522
+        }
+
+        &:nth-child(1) a,
+        &:nth-child(2) a,
+        &:nth-child(3) a{
+            padding-right: 285px;
+        }
+
+    }
+
+    .nav__linki{
+        position: relative;
+        font-weight: 400;
+        padding-top: 14px !important;
+        padding-left: 14px !important;
+        padding-bottom: 14px !important;
+    }
+}
+
+
+@media screen and (max-width:992px){
+    .nav__contents{
+        padding-right: 10px !important;
+    } 
+
+}

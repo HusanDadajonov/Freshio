@@ -1,0 +1,21 @@
+.pages-dropw-down {
+
+    &__item {
+        padding: 0 10px;
+
+        &:hover .pages-dropw-down__link{
+            border-color:$color-general;
+            transform: translateY(-5px);
+        }
+    }
+
+    &__link {
+        border: 1px solid #eaeaea;
+        padding: 5px;
+        transition: all 0.4s ease;
+    }
+
+    &__img {
+        object-fit: cover;
+    }
+}

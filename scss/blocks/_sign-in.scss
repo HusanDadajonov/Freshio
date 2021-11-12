@@ -1,0 +1,49 @@
+.sign-in {
+    border-left: 1px solid #e2e2e2;
+    
+		&__link {
+            text-decoration: none;
+            font-size: 13px;
+            color: #aaa;
+            position: relative;
+            padding-left: 20px;
+            transition: color 0.4s ease;
+
+            &::before{
+                content: "";
+                font-family: bootstrap-icons !important;
+                width: 13px;
+                height: 12px;
+                position:absolute;
+                left: 0;  
+                transform: translate(0,3px);
+            }
+            
+            &:hover{
+                color: $color-general;
+            }
+		}
+
+        &__item:nth-child(1) .sign-in__link::before{
+            content: "\f1c3";
+        }
+
+        &__item:nth-child(2) .sign-in__link::before{
+            content: "\f47b";
+        }
+
+        &__item:nth-child(3) .sign-in__link::before{
+            content: "\f417";
+        }   
+        
+        &__item:nth-child(4) .sign-in__link::before{
+            content: "\ece7";
+            font-family: boxicons!important;
+        }  
+        
+        &__item:nth-child(5) .sign-in__link::before{
+            content: "\f271";
+        }  
+        
+        
+}

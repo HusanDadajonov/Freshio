@@ -1,0 +1,26 @@
+.hero{
+
+    &__theme-option{
+        width: 140px;
+        height: 30px;
+        line-height: 34px;
+        position:fixed;
+        z-index: 999;
+        right: -50px;
+        top: 250px;
+        background: $color-only-texts;
+        border: none;
+        text-align: center;
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 12px;
+        letter-spacing: 1px;
+        transform: rotate(-90deg);
+    }
+}
+
+@media screen and (max-width:992px){
+    .hero__theme-option{
+        display: none;
+    }
+}

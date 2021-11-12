@@ -1,0 +1,43 @@
+.login{
+
+    &__canvas{
+        width: 300px;
+        height: 100%;
+        padding: 15px;
+        overflow-y: scroll;
+
+        &::-webkit-scrollbar{
+            display: none;
+        }
+    }
+
+    &__close-btn{
+        width: 45px;
+        height: 45px;
+        background-image: none;
+        @include flex();
+        justify-content: center;
+
+        &:hover::before{
+            color: #bac34e;
+            opacity: 1 !important;
+        }
+
+        &::before{
+            content: "\f62a";
+            font-family: bootstrap-icons !important;
+            font-size: 32px;
+            color: rgb(49, 49, 49);
+            transition: color 0.4s ease;
+        }
+
+        &:focus{
+            box-shadow: none;
+        }
+    }
+
+    &__header{
+        padding-top: 15px;
+        padding-bottom: 30px;
+    }
+}

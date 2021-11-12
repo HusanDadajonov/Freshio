@@ -1,0 +1,72 @@
+.customers {
+
+    &__title {
+        @include store-title();
+        margin-bottom: 30px !important;
+    }
+
+    &__desc {
+        font-size: 14px;
+        color: #000;
+        font-weight: 400;
+        margin-bottom: 16px !important;
+    }
+
+    &__name {
+        display: inline-block;
+        font-size:14px;
+        color: #aaa;
+        margin-bottom: 40px;
+    }
+
+    &__btns {
+        margin-left: 108px;
+    }
+
+    &__btn {
+        width: 8px;
+        height: 8px;
+        background: #d5d5d5;
+        border-radius: 50%;
+        border: none;
+        cursor: pointer;
+
+        &:not(:last-child){
+            margin-right: 7px;
+        }
+
+        &:hover{
+            background: $color-only-texts;
+        }
+    }
+
+    &__btn--active {
+        background: $color-only-texts;
+    }
+
+    &__contents{
+        padding-left: 108px;
+        padding-right: 80px;
+        position: relative;
+
+        &::before{
+            content: "";
+            width: 48px;
+            height: 38px;
+            position:absolute;
+            left: 0;
+            top: 0;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url("../../img/quote.png");
+        }
+    }
+}
+
+
+@media screen and (max-width:768px){
+    .customers__contents{
+        padding-right: 0;
+        padding-left: 80px ;
+    }
+}

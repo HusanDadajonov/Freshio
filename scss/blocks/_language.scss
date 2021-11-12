@@ -1,0 +1,45 @@
+.language {
+    padding: 20px 0 50px 0;
+
+    &__title {
+        font-size: 14px;
+        display: block;
+        margin-bottom: 7px !important;
+        text-transform: none;
+        font-weight: 700;
+        color: #aaa;
+    }
+
+    &__list {
+        margin-bottom: 7px !important;
+        padding-right: 40px !important;
+    }
+
+    &__item {
+        width: auto !important;
+        padding: 2px 4px !important;
+        border: 1px solid transparent;
+    }
+
+    
+    &__item--active{
+        border-color: $color-general;
+    }
+
+    &__flug {
+        display: block;
+    }
+
+    &__money {
+        font-size: 13px;
+        color: #aaa;
+        text-transform: uppercase;
+        text-decoration: none;
+        cursor: pointer;
+        padding: 0 5px;
+    }
+
+    &__money--active{
+        color: $color-general;
+    }
+}

@@ -1,0 +1,55 @@
+.sale {
+    
+    position: relative;
+
+    &__box{
+        height: 310px;
+    }
+
+
+    &__contents {
+        width: 100%;
+        @include flex();
+        flex-direction: column;
+        position:absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+    &__title--small{
+        margin-bottom: 15px !important;
+    }
+
+    &__title {
+        font-size: 40px;
+        color: #f4ed23;
+        margin-bottom: 5px !important;
+    }
+
+    &__desc {
+        color: #fff;
+        margin-bottom: 20px !important; 
+    }
+
+    &__btn{
+        padding: 8px 35px 9px 29px;
+        background-color: #bac34e;
+        border-radius: 30px;
+
+        &:hover{
+            background: #fff;
+            color: #bac34e !important;
+        }
+    
+        &::after{
+            display: none;
+        }
+
+        &::before{
+            top: 30%;
+            right: 23px;
+        }
+    }
+}
+

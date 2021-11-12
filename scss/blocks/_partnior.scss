@@ -1,0 +1,40 @@
+.partnior {
+    
+
+    &__list {
+        width: 1300px;
+        border-top: 1px solid #e5e5e5;
+        padding: 60px 0 !important;
+    }
+
+    &__item {
+        @include flex();
+        flex-direction: column;
+        width: 220px;
+        padding: 0 15px;
+        cursor: pointer;
+
+        &:hover .partnior__img{
+            opacity: 1;
+        }
+    }
+
+  
+
+    &__img {
+        opacity: 0.5;
+        transition: opacity 0.4s ease;
+    }
+
+    &__slider-btn{
+        opacity: 1;
+        visibility: visible;
+        transform: translate(0,-30px);
+    }
+
+   
+}
+
+.partnior .slide{
+    margin-bottom: 0 !important;
+}

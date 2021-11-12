@@ -1,0 +1,142 @@
+.info {
+    
+
+    &__wrapper{
+        padding: 50px 15px;
+        border-bottom: 1px solid #e2e2e2;
+    }
+
+    &__tel-box {
+        position: relative;
+        padding-left: 65px;
+        margin-right: 70px;
+
+        &::before{
+            content: "\f58f";
+            position:absolute;
+            left: 0;
+            top: 50%;
+            transform: translate(0,-50%);
+            font-family: 'Font Awesome 5 Pro';
+            display: block;
+            font-size: 50px;
+            color: $color-general;
+        }
+    }
+
+    &__title {
+        font-size: 12px;
+        font-weight: 600;
+        color: #000;
+        letter-spacing: 2.4px;
+        text-transform: uppercase;
+        margin-bottom: 13px !important;
+    }
+
+    &__tel {
+        color: $color-general;
+        font-size: 20px;
+        text-decoration: none;
+
+        &:hover{
+            color: $color-general;
+        }
+    }
+
+    &__email-box {
+        position: relative;
+        padding-left: 65px;
+
+        &::before{
+            content: "\f658";
+            position:absolute;
+            left: 0;
+            top: 50%;
+            transform: translate(0,-50%);
+            font-family: 'Font Awesome 5 Pro';
+            color: $color-general;
+            font-size: 50px;
+        }
+
+        
+    }
+
+    &__email {
+        text-decoration: none;
+        font-size: 14px;
+        color: #000;
+        position: relative;
+
+
+        &:hover{
+            color: #000;
+        }
+
+        &::after{
+            content: "";
+            width: 100%;
+            height: 1.5px;
+            position:absolute;
+            left: 0;
+            bottom: -3px;
+            background: $color-general;
+        }
+        
+    }
+
+}
+
+@media screen and (max-width:1200px){
+    .info__flex {
+        flex-direction: column;
+    }
+
+    .info__wrapper{
+        padding-left: 1.5rem !important;
+    }
+
+    .info__tel-box{
+        margin-right: 305px !important;
+    }
+
+    .info__cards{
+        margin-left: auto;
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width:768px){
+    .info__contents{
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+
+    .info__tel-box{
+        margin-right: 0 !important;
+    }
+
+    .info__flex{
+        align-items: center;
+        
+    }
+
+    .info__cards{
+        margin: auto;
+    }
+
+    .info__tel-box,
+    .info__email-box{
+        padding-left: 0 !important;
+        padding-top: 65px;
+        @include flex();
+        flex-direction: column;
+        margin-bottom: 30px;
+
+        &::before{
+            top: -5px;
+            left: 50%;
+            transform: translate(-50%,0);
+        }
+    }
+
+}

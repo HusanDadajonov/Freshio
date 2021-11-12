@@ -1,0 +1,87 @@
+.exiting {
+
+    &__title {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.1;
+        color: $color-general;
+        margin-bottom: 20px !important;
+    }
+
+
+    &__label {
+        width: 100%;
+    }
+
+
+    &__label-check{
+        font-size: 12px;
+        color: #414141;
+        margin-left: 7px;
+    }
+
+    &__inp {
+        width: 100%;
+        border: 1px solid #e2e2e2;
+        font-size: 14px;
+        line-height: 1.25;
+        border-radius: 0.25rem;
+        padding: 8px 30px 8px 16px;
+        margin-bottom: 1rem;
+
+        &:focus{
+            outline: none;
+            border: 1px solid #bac34e;
+        }
+    }
+
+    &__inp--check{
+        width: auto;
+        margin-bottom: 0;
+    }
+
+    &__link{
+        font-size: 12px;    
+        color: #555;
+        transition: color 0.4s ease;
+
+        &:hover{
+            color: $color-general;
+        }
+    }
+
+    &__inp--password {
+        background-image: url("../../img/inp-bg.svg");
+        background-size: 27px 27px;
+        background-repeat: no-repeat;
+        background-position: right center;
+    }
+
+    &__btn {
+        width: 100%;
+        background-color: $color-general;
+        border-color: $color-general;
+        color: #fff;
+        font-size: 12px;
+        color: #fff;
+        border-radius: 20px;
+        padding: 10px 15px 7px 15px;
+
+        &:hover{
+            color: #fff;
+        }
+
+        &:focus{
+            box-shadow: none;
+        }
+    }
+
+    &__accordion-title{
+        font-weight: 400;
+        line-height: 1.1;
+        color: $color-only-texts;
+        font-size: 18px;
+    }
+}
+
+

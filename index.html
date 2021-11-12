@@ -4,12 +4,1221 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lesson</title>
-  <link rel="stylesheet" href="css/flexboxgrid.min.css">
+  <title>Freshio</title>
+  <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="shortcut icon" type="image/x-icon" href="https://demo73leotheme.b-cdn.net/prestashop/at_freshio/img/favicon.ico?1603358296">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/main.min.css">
 </head>
 <body>
+  <!-- start hero -->
+  <section class="hero">
+    <a class="back-to-top" href="#"><i class="bi bi-chevron-double-up"></i></a>
+    <button class="hero__theme-option">theme options</button>
+    <div class="hero__login login">
+      <div class="offcanvas login__canvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <header class="login__header">  
+          <div class="d-flex align-items-center justify-content-between">
+            <a href="index.html">
+              <img src="img/logo.jpg" alt="logo">
+            </a>
+            <button type="button" class="login__close-btn btn-close p-0" aria-label="Close" data-bs-dismiss="offcanvas"></button>
+          </div>
+        </header>
+        <div class="login__exiting exiting">
+          <h3 class="exiting__title">Existing Account Login</h3>
+          <form class="exiting__form" action="https://echo.htmlacademy.ru/" method="post">
+            <label class="exiting__label" for="user-email">
+              <input class="exiting__inp" type="email" name="user-email" id="user-email" required placeholder="Email Address" autocomplete="off">
+            </label>
+            <label class="exiting__label" for="user-pasw">
+              <input class="exiting__inp exiting__inp--password" type="password" name="user-passw" id="user-pasw" required placeholder="Password" autocomplete="off">
+            </label>
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <div class="d-flex align-items-center">
+                <input class="exiting__inp exiting__inp--check" type="checkbox" name="remember" id="remember" autocomplete="off">
+                <label class="exiting__label exiting__label-check" for="remember">Remember Me</label>
+              </div>
+              <a class="exiting__link text-decoration-none" href="#" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Forgot Password ?</a>
+            </div>
+            <button class="exiting__btn btn fw-bold">Login</button>
+          </form>
+          <div class="exiting__accordion accordion pt-3 pb-4" id="accordionExample">
+            <div class="exiting__accordion-item accordion-item border-0">
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <h3 class="exiting__accordion-title mb-2 text-center">Reset Password</h3>
+                <form action="https://echo.htmlacademy.ru/" method="post">
+                  <label class="exiting__label" for="reset-pasw-email">
+                    <input class="exiting__inp" type="email" name="reset-pasw-email" id="reset-pasw-email" required placeholder="Email Address" autocomplete="off">
+                  </label>
+                  <button class="exiting__btn btn fw-bold">Reset Password</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="login__social-network social-network">
+          <h2 class="social-network__title exiting__title">Connect with Social Networks</h2>
+          <ul class="d-flex align-items-center list-unstyled social-network__list">
+            <li class="social-network__item">
+              <a class="social-network__link" href="#" target="_blank"><i class='bx bxl-facebook'></i></a>
+            </li>
+            <li class="social-network__item">
+              <a class="social-network__link" href="#" target="_blank"><i class='bx bxl-google'></i></a>
+            </li>
+            <li class="social-network__item">
+              <a class="social-network__link" href="#" target="_blank"><i class='bx bxl-twitter' ></i></a>
+            </li>
+          </ul>
+        </div>  
+        <div class="login__register register">
+          <h2 class="register__title exiting__title">New Account Register</h2>
+          <form class="exiting__form" action="https://echo.htmlacademy.ru/" method="post">
+            <label class="exiting__label" for="first-name">
+              <input class="exiting__inp" type="text" name="first-name" id="first-name" required placeholder="First Name" autocomplete="off">
+            </label>
+            <label class="exiting__label" for="last-name">
+              <input class="exiting__inp" type="text" name="last-name" id="last-name" required placeholder="Last Name" autocomplete="off">
+            </label>
+            <label class="exiting__label" for="email">
+              <input class="exiting__inp" type="email" name="email" id="email" required placeholder="Email Address" autocomplete="off">
+            </label>
+            <label class="exiting__label" for="password">
+              <input class="exiting__inp exiting__inp--password" type="password" name="password" id="password" required placeholder="Password" autocomplete="off">
+            </label>
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <div class="d-flex align-items-center">
+                <input class="exiting__inp exiting__inp--check" type="checkbox" name="remember" id="agree" autocomplete="off">
+                <label class="exiting__label exiting__label-check" for="agree">I agree to the terms.</label>
+              </div>
+            </div>
+            <button class="exiting__btn btn fw-bold">Create an Account</button>
+          </form>
+        </div>
+        <div class="login__language language">
+          <div class="row align-center">
+            <div class="col-6 p-0">
+              <h2 class="language__title">Language:</h2>
+              <ul class="row align-items-center language__list list-unstyled">
+                <li class="language__item language__item--active p-0">
+                  <a class="language__link" href="#">
+                    <img class="language__flug" src="img/america.jpg" alt="america-img">
+                  </a>
+                </li>
+                <li class="language__item p-0">
+                  <a class="language__link" href="#">
+                    <img class="language__flug" src="img/france.jpg" alt="america-img">
+                  </a>
+                </li>
+                <li class="language__item p-0">
+                  <a class="language__link" href="#">
+                    <img class="language__flug" src="img/russia.jpg" alt="america-img">
+                  </a>
+                </li>
+                <li class="language__item p-0">
+                  <a class="language__link" href="#">
+                    <img class="language__flug" src="img/france-2.jpg" alt="america-img">
+                  </a>
+                </li>
+                <li class="language__item p-0">
+                  <a class="language__link" href="#">
+                    <img class="language__flug" src="img/canada.jpg" alt="america-img">
+                  </a>
+                </li>
+                <li class="language__item p-0">
+                  <a class="language__link" href="#">
+                    <img class="language__flug" src="img/lastflag.jpg" alt="america-img">
+                  </a>
+                </li>
+              </ul>
+              <div>
+                <h2 class="language__title">Currency:</h2>
+                <div class="language__money-box">
+                  <span class="language__money">eur</span>
+                  <span class="language__money language__money--active">usd</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 p-0 language__sign-in sign-in">
+              <ul class="sign-in__list list-unstyled ps-3">
+                <li class="sign-in__item">
+                  <a class="sign-in__link" href="#">Sign in</a>
+                </li>
+                <li class="sign-in__item">
+                  <a class="sign-in__link" href="#">My account</a>
+                </li>
+                <li class="sign-in__item">
+                  <a class="sign-in__link" href="#">Wishlist (0)</a>
+                </li>
+                <li class="sign-in__item">
+                  <a class="sign-in__link" href="#">Compare (0)</a>
+                </li>
+                <li class="sign-in__item">
+                  <a class="sign-in__link" href="#">Checkout</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero__bottom-menu bottom-menu">
+      <ul class="d-flex align-items-center justify-content-between bottom-menu__list list-unstyled">
+        <li  class="bottom-menu__item col-3 p-0">
+          <button class="bottom-menu__btn" type="button"><i class="bi bi-shop-window"></i></button>
+          <h3 class="bottom-menu__title">shop</h3>
+        </li>
+        <li  class="bottom-menu__item col-3 p-0">
+          <button class="bottom-menu__btn" type="button"><i class="bi bi-heart"></i></button>
+          <h3  class="bottom-menu__title">wishlist</h3>
+        </li>
+        <li  class="bottom-menu__item col-3 p-0" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+          <button class="bottom-menu__btn" type="button"><i class="bi bi-person"></i></button>
+          <h3  class="bottom-menu__title">Account</h3>
+        </li>
+        <li  class="bottom-menu__item col-3 p-0">
+          <button class="bottom-menu__btn bottom-menu__btn--search" type="button"><i class="bi bi-search"></i><i class="fs-3  bi bi-x"></i></button>
+          <h3  class="bottom-menu__title">Search</h3>
+        </li>
+      </ul>
+    </div>
+    <div class="hero__header-top header-top">
+      <div class="container">
+        <div class="row align-items-center justify-content-between ">
+          <div class="p-0 col-xl-6 col-lg-6">
+            <p class="header-top__desc text-black">FREE express international delivery + EASY returns</p>
+          </div>
+          <ul class="p-0 header-top__list justify-content-end d-flex align-items-center list-unstyled col-xl-6 col-lg-6">
+            <li class="header-top__item">
+              <a class="header-top__link text-decoration-none text-black text-uppercase" href="about.html">about</a>
+            </li>
+            <li class="header-top__item">
+              <a class="header-top__link text-decoration-none text-black text-uppercase" href="#">faq</a>
+            </li>
+            <li class="header-top__item">
+              <a class="header-top__link text-decoration-none text-black text-uppercase" href="contact.html">contact us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="main-container">
+      <header class="hero__header header">
+        <div class="container">
+          <div class="d-flex align-items-center justify-content-between">
+            <button class="p-0 header__burger-btn"  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">☰</button>
+            <a class="p-0 header__logo-link" href="index.html">
+              <img class="header__logo" src="img/logo.jpg" alt="site-logo">
+            </a>
+            <div class="header__form-box">
+              <form class="p-0 header__form  d-flex align-items-center jusitfy-content-between" action="https://echo.htmlacademy.ru/"  method="post">
+                <label class="header__label" for="search-inp">
+                  <input class="header__inp border-0" type="search" name="searched-keyword" id="search-inp" placeholder="Enter Keyword..." autocomplete="off" required>
+                </label>
+                <button class="header__btn btn fw-bold text-black p-0">Search</button>
+              </form>
+            </div>
+            <ul class="p-0 header__list list-unstyled d-flex align-items-center justify-content-end">
+              <li class="header__item position-relative"><button class="header__btns header__btns--user border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="bi bi-person"></i></button></li>
+              <li class="header__item position-relative"><button class="header__btns header__btns--heart border-0" type="button" ><i class="bi bi-heart"></i></button><span class="header__count">0</span></li>
+              <li class="header__item position-relative"><button class="header__btns header__btns--shop border-0" type="button"><i class="bi bi-basket"></i></button><span class="header__count">0</span></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container">
+        <nav class="hero__nav nav position-relative">
+          <span class="nav__opacity"></span>
+          <div class="d-flex align-items-center">
+            <div class="d-flex align-items-center nav__contents">
+              <button class="nav__burger-btn p-0"><i class="bi bi-list"></i></button>
+              <h3 class="nav__title">Shop by Department</h3>
+              <div>
+                  <div class="nav__shop-dropw-down shop-dropw-down">
+                    <ul class="list-unstyled shop-dropw-down__list">
+                  <li class="shop-dropw-down__item">
+                    <a class="shop-dropw-down__link" href="#">Fruits & Vegetables</a>
+                  </li>
+                  <li class="shop-dropw-down__item">
+                    <a class="shop-dropw-down__link" href="#">Supplyments</a>
+                  </li>
+                  <li class="shop-dropw-down__item">
+                    <a class="shop-dropw-down__link" href="#">Dairy Bread & Eggs</a>
+                  </li>
+                  <li class="shop-dropw-down__item">
+                    <a class="shop-dropw-down__link" href="#">Package Foods</a>
+                  </li>
+                  <li class="shop-dropw-down__item">
+                    <a class="shop-dropw-down__link" href="#">Beauty & Care</a>
+                  </li>
+                  <li class="shop-dropw-down__item">
+                    <a class="shop-dropw-down__link" href="#">Health & Wellness</a>
+                  </li>
+                  <li class="shop-dropw-down__item">
+                    <a class="shop-dropw-down__link" href="#">Baby & Infants</a>
+                  </li>
+                  <li class="shop-dropw-down__item">
+                    <a class="shop-dropw-down__link" href="#">Home Care</a>
+                  </li>
+                  <li class="shop-dropw-down__item">
+                    <a class="shop-dropw-down__link" href="#">Hot Offers</a>
+                  </li>
+                    </ul>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="nav__list-box">
+              <button class="nav__close-btn login__close-btn border-0">Close</button>
+              <ul class="nav__list list-unstyled d-flex align-items-center">
+                <li class="nav__item position-relative">
+                  <a class="nav__linki" href="#">Home</a>
+                  <div class="nav__drow-down drow-down">
+                    <ul class="drow-down__list list-unstyled">
+                      <li class="drow-down__item">
+                        <a class="drow-down__link" href="#">Home 1</a>
+                      </li>
+                      <li class="drow-down__item">
+                        <a class="drow-down__link" href="#">Home 2</a>
+                      </li>
+                      <li class="drow-down__item">
+                        <a class="drow-down__link" href="#">Home 3</a>
+                      </li>
+                      <li class="drow-down__item">
+                        <a class="drow-down__link" href="#">Home 4</a>
+                      </li>
+                      <li class="drow-down__item">
+                        <a class="drow-down__link" href="#">Home 5</a>
+                      </li>
+                      <li class="drow-down__item">
+                        <a class="drow-down__link" href="#">Home 6</a>
+                      </li>
+                      <li class="drow-down__item">
+                        <a class="drow-down__link" href="#">Home 7</a>
+                      </li>
+                      <li class="drow-down__item">
+                        <a class="drow-down__link" href="#">Home 8</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li> 
+                <li class="nav__item">
+                  <a class="nav__linki" href="#">Shop</a>
+                  <div class="shopping-dropw-down nav__drow-down drow-down">
+                    <div class="row">
+                      <ul class="col-3 shopping-dropw-down__list drow-down__list list-unstyled">
+                        <li class="drow-down__item shopping-dropw-down__item">
+                          <h2 class="shopping-dropw-down__title" href="#">Categories 1</a>
+                        </li>
+                        <li class="drow-down__item shopping-dropw-down__item">
+                          <a class="drow-down__link shopping-dropw-down__link" href="#">Vegatable</a>
+                        </li>
+                        <li class="drow-down__item shopping-dropw-down__item">
+                          <a class="drow-down__link shopping-dropw-down__link" href="#">Tomato</a>
+                        </li>
+                        <li class="drow-down__item shopping-dropw-down__item">
+                          <a class="drow-down__link shopping-dropw-down__link" href="#">Cabbage</a>
+                        </li>
+                        <li class="drow-down__item shopping-dropw-down__item">
+                          <a class="drow-down__link shopping-dropw-down__link" href="#">Juice</a>
+                        </li>
+                        <li class="drow-down__item shopping-dropw-down__item">
+                          <a class="drow-down__link shopping-dropw-down__link" href="#">Meat</a>
+                        </li>
+                      </ul>
+                      <ul class="col-3 shopping-dropw-down__list drow-down__list list-unstyled">
+                        <li class="drow-down__item shopping-dropw-down__item">
+                          <h2 class="shopping-dropw-down__title" href="#">Categories 2</a>
+                        </li>
+                        <li class="drow-down__item shopping-dropw-down__item">
+                          <a class="drow-down__link shopping-dropw-down__link" href="#">Beef</a>
+                        </li>
+                        <li class="drow-down__item shopping-dropw-down__item">
+                          <a class="drow-down__link shopping-dropw-down__link" href="#">Pork</a>
+                        </li>
+                        <li class="drow-down__item shopping-dropw-down__item">
+                          <a class="drow-down__link shopping-dropw-down__link" href="#">Coconut</a>
+                        </li>
+                        <li class="drow-down__item shopping-dropw-down__item">
+                          <a class="drow-down__link shopping-dropw-down__link" href="#">Broccoli</a>
+                        </li>
+                        <li class="drow-down__item shopping-dropw-down__item">
+                          <a class="drow-down__link shopping-dropw-down__link" href="#">Fish</a>
+                        </li>
+                      </ul>
+                      <ul class="col-3 shopping-dropw-down__list drow-down__list list-unstyled">
+                        <li class="drow-down__item shopping-dropw-down__item">
+                          <h2 class="shopping-dropw-down__title" href="#">Categories 3</a>
+                        </li>
+                        <li class="drow-down__item shopping-dropw-down__item">
+                          <a class="drow-down__link shopping-dropw-down__link" href="#">Seafood</a>
+                        </li>
+                        <li class="drow-down__item shopping-dropw-down__item">
+                          <a class="drow-down__link shopping-dropw-down__link" href="#">Octopus</a>
+                        </li>
+                        <li class="drow-down__item shopping-dropw-down__item">
+                          <a class="drow-down__link shopping-dropw-down__link" href="#">Fish</a>
+                        </li>
+                        <li class="drow-down__item shopping-dropw-down__item">
+                          <a class="drow-down__link shopping-dropw-down__link" href="#">Pork</a>
+                        </li>
+                        <li class="drow-down__item shopping-dropw-down__item">
+                          <a class="drow-down__link shopping-dropw-down__link" href="#">More</a>
+                        </li>
+                      </ul>
+                      <ul class="col-3 shopping-dropw-down__list drow-down__list list-unstyled">
+                        <li class="drow-down__item shopping-dropw-down__item">
+                          <h2 class="shopping-dropw-down__title" href="#">Categories 4</a>
+                        </li>
+                        <li class="drow-down__item shopping-dropw-down__item">
+                          <a class="drow-down__link shopping-dropw-down__link" href="#">Vegatable</a>
+                        </li>
+                        <li class="drow-down__item shopping-dropw-down__item">
+                          <a class="drow-down__link shopping-dropw-down__link" href="#">Fresh Meat</a>
+                        </li>
+                        <li class="drow-down__item shopping-dropw-down__item">
+                          <a class="drow-down__link shopping-dropw-down__link" href="#">Fruit & Nut Gifts</a>
+                        </li>
+                        <li class="drow-down__item shopping-dropw-down__item">
+                          <a class="drow-down__link shopping-dropw-down__link" href="#">Fresh Berries</a>
+                        </li>
+                        <li class="drow-down__item shopping-dropw-down__item">
+                          <a class="drow-down__link shopping-dropw-down__link" href="#">Fat Freezing</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__linki" href="#">Pages</a>
+                  <div class="shopping-dropw-down pages-dropw-down nav__drow-down drow-down">
+                    <div class="row">
+                      <ul class="d-flex pages-dropw-down__list shopping-dropw-down__list drow-down__list list-unstyled">
+                        <li class="pages-dropw-down__item drow-down__item shopping-dropw-down__item">
+                          <a class="pages-dropw-down__link drow-down__link shopping-dropw-down__link" href="#">
+                            <img class="pages-dropw-down__img" src="img/pages-img1.jpg" alt="pages-img">
+                          </a>
+                        </li>
+                        <li class="pages-dropw-down__item drow-down__item shopping-dropw-down__item">
+                          <a class="pages-dropw-down__link drow-down__link shopping-dropw-down__link" href="#">
+                            <img class="pages-dropw-down__img" src="img/pages-img2.jpg" alt="pages-img">
+                          </a>
+                        </li>
+                        <li class="pages-dropw-down__item drow-down__item shopping-dropw-down__item">
+                          <a class="pages-dropw-down__link drow-down__link shopping-dropw-down__link" href="#">
+                            <img class="pages-dropw-down__img" src="img/pages-img3.jpg" alt="pages-img">
+                          </a>
+                        </li>
+                        <li class="pages-dropw-down__item drow-down__item shopping-dropw-down__item">
+                          <a class="pages-dropw-down__link drow-down__link shopping-dropw-down__link" href="#">
+                            <img class="pages-dropw-down__img" src="img/pages-img4.jpg" alt="pages-img">
+                          </a>
+                        </li>
+                        <li class="pages-dropw-down__item drow-down__item shopping-dropw-down__item">
+                          <a class="pages-dropw-down__link drow-down__link shopping-dropw-down__link" href="#">
+                            <img class="pages-dropw-down__img" src="img/pages-img5.jpg" alt="pages-img">
+                          </a>
+                        </li>
+                        <li class="pages-dropw-down__item drow-down__item shopping-dropw-down__item">
+                          <a class="pages-dropw-down__link drow-down__link shopping-dropw-down__link" href="#">
+                            <img class="pages-dropw-down__img" src="img/pages-img6.jpg" alt="pages-img">
+                          </a>
+                        </li>
+                        <li class="pages-dropw-down__item drow-down__item shopping-dropw-down__item">
+                          <a class="pages-dropw-down__link drow-down__link shopping-dropw-down__link" href="#">
+                            <img class="pages-dropw-down__img" src="img/pages-img7.jpg" alt="pages-img">
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__linki" href="#">Blog</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__linki" href="contact.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="container hero__slider slider">
+        <div class="row justify-content-between">
+          <div id="carouselExampleFade" class="carousel slide carousel-fade ps-0 col-xl-8 col-lg-8 col-md-12 col-sm-12 " data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="slider__item carousel-item active">
+                <div class="slider__box">
+                  <img class="slider__img" src="img/slide-img1.jpg" alt="egg">
+                  <div class="slider__contents">
+                    <h3 class="slider__title--small animate__animated animate__slideInLeft">Fresh and Tasty</h3>
+                    <h2 class="slider__title animate__animated  animate__slideInLeft">Farm Market <br>Organic Shop</h2>
+                    <a class="slider__btn animate__animated animate__slideInLeft" href="#">shop Now</a>
+                  </div>
+                  <div class="slider__arrow-btns">
+                    <button class="slider__arrow-btn" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev"><i class="bi bi-arrow-left" ></i></button>
+                    <button class="slider__arrow-btn" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next"><i class="bi bi-arrow-right" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next"></i></button>
+                  </div>
+                </div>
+              </div>
+              <div class="slider__item carousel-item">
+                <div class="slider__box">
+                  <img class="slider__img" src="img/slide-img2.jpg" alt="sliderimg">
+                  <div class="slider__contents">
+                    <h3 class="slider__title--small animate__animated animate__slideInLeft">Fresh and Tasty</h3>
+                    <h2 class="slider__title animate__animated animate__slideInLeft">Farm Market <br>Organic Shop</h2>
+                    <a class="slider__btn animate__animated animate__slideInLeft" href="#">shop Now</a>
+                  </div>
+                  <div class="slider__arrow-btns">
+                    <button class="slider__arrow-btn" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev"><i class="bi bi-arrow-left" ></i></button>
+                    <button class="slider__arrow-btn" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next"><i class="bi bi-arrow-right" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div> 
+          </div>
+          <div class="slider__discover discover col-xl-4 col-lg-4 col-md-12 col-sm-12  pe-0">
+            <div class="discover__box">
+              <div class="discover__img-box h-100 position-relative">
+                <img class="slider__img" src="img/slider-img3.jpg" alt="slider-img3">
+                <div class="discover__contents">
+                  <h2 class="discover__title">Discover<br>Real Organic<br>Flavors</h2>
+                  <a class="discover__btn slider__btn" href="#">Shop  Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="discover__sale sale">
+              <div class="sale__box">
+                <img class="slider__img" src="img/slider-img4.jpg" alt="slider-img">
+                <div class="sale__contents">
+                  <h3 class="slider__title--small sale__title--small text-light">Summer Sale</h3>
+                  <h2 class="sale__title">50% Off</h2>
+                  <p class="sale__desc">Vitamins, Supplements and Herbs</p>
+                  <a class="slider__btn sale__btn text-light" href="#">Shop Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end hero -->
 
+  <!-- start main -->
+  <main>
+    <!-- start services -->
+    <section class="services">
+      <div class="main-container">
+        <div class="services__container container">
+          <ul class="services__list list-unstyled row justify-content-between">
+            <li class="services__item col-xl-3 col-lg-3 col-md-6 col-sm-6">
+              <div class="services__contents">
+                <h3 class="services__title">Curated Products</h3>
+                <p class="services__desc">from Handpicked Sellers</p>
+              </div>
+            </li>
+            <li class="services__item col-xl-3 col-lg-3 col-md-6 col-sm-6">
+              <div class="services__contents">
+                <h3 class="services__title">Handmade</h3>
+                <p class="services__desc">Made with passion by 300+ curators across the country.</p>
+              </div>
+            </li>
+            <li class="services__item col-xl-3 col-lg-3 col-md-6 col-sm-6">
+              <div class="services__contents">
+                <h3 class="services__title">100% Natural</h3>
+                <p class="services__desc">Eat local, consume local, <br> closer to nature.</p>
+              </div>
+            </li>
+            <li class="services__item col-xl-3 col-lg-3 col-md-6 col-sm-6">
+              <div class="services__contents">
+                <h3 class="services__title">Shipping</h3>
+                <p class="services__desc">Across West & East India</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- end services -->
+
+    <!-- start products -->
+    <section class="products">
+      <div class="main-container">
+        <div class="container">
+          <div class="products__contents position-relative">
+            <div class="products__flex d-flex align-items-center justify-content-between mb-4">
+              <h2 class="products__title">Featured Products</h2>
+              <a class="products__link slider__btn" href="#">Shop All</a>
+            </div>
+            <div id="carouselExampleControls" class="products__slide  carousel slide" data-bs-ride="carousel">
+              <div class="products__carusel-inner carousel-inner">
+                <div class="carousel-item active">
+                  <ul class="d-flex align-items-center products__list list-unstyled justify-content-between">
+                    <li class="products__item products__item--sale ps-0">
+                      <div class="products__block">
+                        <div class="products__sales">
+                          <span class="products__online-only">Online only</span>
+                          <span class="products__sale">On sale!</span>
+                        </div>
+                        <div class="products__img-box">
+                          <ul class="products__functional-btn functional-btn d-flex align-items-center list-unstyled">
+                            <li class="functional-btn__item"><a class="functional-btn__link" href="#"><i class="bi bi-eye"></i></a></li>
+                            <li class="functional-btn__item"><a class="functional-btn__link" href="#"><i class="bi bi-heart"></i></a></li>
+                            <li class="functional-btn__item"><a class="functional-btn__link" href="#"><i class="bi bi-shuffle"></i></a></li>
+                          </ul>
+                          <img class="products__img" src="img/carrot.jpg" alt="carrot">
+                          <img class="products__img products__img--lemon" src="img/lemon.jpg" alt="lemon-img">
+                        </div>
+                        <div class="products__texts d-flex flex-column align-items-center">
+                          <a class="products__name text-decoration-none">Nut & Seed</a>
+                          <a class="products__desc text-decoration-none" text-decoration-none>Organic High-Curcumin Turmeric Powder</a>
+                          <span class="products__cost">$22.00</span>
+                          <button class="products__btn slider__btn">Add to cart</button>
+                        </div>
+                      </div>
+                    </li>  
+                    <li class="products__item">
+                      <div class="products__block">
+                        <div class="products__img-box">
+                          <ul class="products__functional-btn functional-btn d-flex align-items-center list-unstyled">
+                            <li class="functional-btn__item"><a class="functional-btn__link" href="#"><i class="bi bi-eye"></i></a></li>
+                            <li class="functional-btn__item"><a class="functional-btn__link" href="#"><i class="bi bi-heart"></i></a></li>
+                            <li class="functional-btn__item"><a class="functional-btn__link" href="#"><i class="bi bi-shuffle"></i></a></li>
+                          </ul>
+                          <img class="products__img" src="img/lemon.jpg" alt="lemon">
+                        </div>
+                        <div class="products__texts d-flex flex-column align-items-center">
+                          <a class="products__name text-decoration-none">Tomatoes</a>
+                          <a class="products__desc text-decoration-none " >Grassfed Organic Turmeric <br> Superghee</a>
+                          <span class="products__cost">$15.00</span>
+                          <button class="products__btn slider__btn">Add to cart</button>
+                        </div>
+                      </div>
+                    </li> 
+                    <li class="products__item">
+                      <div class="products__block">
+                        <div class="products__img-box">
+                          <ul class="products__functional-btn functional-btn d-flex align-items-center list-unstyled">
+                            <li class="functional-btn__item"><a class="functional-btn__link" href="#"><i class="bi bi-eye"></i></a></li>
+                            <li class="functional-btn__item"><a class="functional-btn__link" href="#"><i class="bi bi-heart"></i></a></li>
+                            <li class="functional-btn__item"><a class="functional-btn__link" href="#"><i class="bi bi-shuffle"></i></a></li>
+                          </ul>
+                          <img class="products__img" src="img/apple.jpg" alt="apple">
+                        </div>
+                        <div class="products__texts d-flex flex-column align-items-center">
+                          <a class="products__name text-decoration-none">Home</a>
+                          <a class="products__desc text-decoration-none">Pamela's Products Artisan Blend <br> Flour Gluten Free</a>
+                          <span class="products__cost">$29.00</span>
+                          <button class="products__btn slider__btn">Add to cart</button>
+                        </div>
+                      </div>
+                    </li> 
+                    <li class="products__item pe-0">
+                      <div class="products__block">
+                        <div class="products__img-box">
+                          <ul class="products__functional-btn functional-btn d-flex align-items-center list-unstyled">
+                            <li class="functional-btn__item"><a class="functional-btn__link" href="#"><i class="bi bi-eye"></i></a></li>
+                            <li class="functional-btn__item"><a class="functional-btn__link" href="#"><i class="bi bi-heart"></i></a></li>
+                            <li class="functional-btn__item"><a class="functional-btn__link" href="#"><i class="bi bi-shuffle"></i></a></li>
+                          </ul>
+                          <img class="products__img" src="img/banana.jpg" alt="banana">
+                        </div>
+                        <div class="products__texts d-flex flex-column align-items-center">
+                          <a class="products__name text-decoration-none">Home</a>
+                          <a class="products__desc text-decoration-none">Frontier Co-Op Organic Adobo <br> Seasoning Blend</a>
+                          <span class="products__cost">$29.00</span>
+                          <button class="products__btn slider__btn">Add to cart</button>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="carousel-item">
+                  <ul class="d-flex align-items-center products__list list-unstyled justify-content-between">
+                    <li class="products__item ps-0">
+                      <div class="products__block">
+                        <div class="products__img-box">
+                          <ul class="products__functional-btn functional-btn d-flex align-items-center list-unstyled">
+                            <li class="functional-btn__item"><a class="functional-btn__link" href="#"><i class="bi bi-eye"></i></a></li>
+                            <li class="functional-btn__item"><a class="functional-btn__link" href="#"><i class="bi bi-heart"></i></a></li>
+                            <li class="functional-btn__item"><a class="functional-btn__link" href="#"><i class="bi bi-shuffle"></i></a></li>
+                          </ul>
+                          <img class="products__img" src="img/monion.jpg" alt="carrot">
+                        </div>
+                        <div class="products__texts d-flex flex-column align-items-center">
+                          <a class="products__name text-decoration-none">Home</a>
+                          <a class="products__desc text-decoration-none">Organic High-Curcumin Turmeric Powder</a>
+                          <span class="products__cost">$22.00</span>
+                          <button class="products__btn slider__btn">Add to cart</button>
+                        </div>
+                      </div>
+                    </li>  
+                    <li class="products__item">
+                      <div class="products__block">
+                        <div class="products__img-box">
+                          <ul class="products__functional-btn functional-btn d-flex align-items-center list-unstyled">
+                            <li class="functional-btn__item"><a class="functional-btn__link" href="#"><i class="bi bi-eye"></i></a></li>
+                            <li class="functional-btn__item"><a class="functional-btn__link" href="#"><i class="bi bi-heart"></i></a></li>
+                            <li class="functional-btn__item"><a class="functional-btn__link" href="#"><i class="bi bi-shuffle"></i></a></li>
+                          </ul>
+                          <img class="products__img" src="img/potato.jpg" alt="lemon">
+                        </div>
+                        <div class="products__texts d-flex flex-column align-items-center">
+                          <a class="products__name text-decoration-none">Home</a>
+                          <a class="products__desc text-decoration-none " >Grassfed Organic Turmeric <br> Superghee</a>
+                          <span class="products__cost">$15.00</span>
+                          <button class="products__btn slider__btn">Add to cart</button>
+                        </div>
+                      </div>
+                    </li> 
+                    <li class="products__item">
+                      <div class="products__block">
+                        <div class="products__img-box">
+                          <ul class="products__functional-btn functional-btn d-flex align-items-center list-unstyled">
+                            <li class="functional-btn__item"><a class="functional-btn__link" href="#"><i class="bi bi-eye"></i></a></li>
+                            <li class="functional-btn__item"><a class="functional-btn__link" href="#"><i class="bi bi-heart"></i></a></li>
+                            <li class="functional-btn__item"><a class="functional-btn__link" href="#"><i class="bi bi-shuffle"></i></a></li>
+                          </ul>
+                          <img class="products__img" src="img/pomidor.jpg" alt="apple">
+                        </div>
+                        <div class="products__texts d-flex flex-column align-items-center">
+                          <a class="products__name text-decoration-none">Home</a>
+                          <a class="products__desc text-decoration-none">Pamela's Products Artisan Blend <br> Flour Gluten Free</a>
+                          <span class="products__cost">$29.00</span>
+                          <button class="products__btn slider__btn">Add to cart</button>
+                        </div>
+                      </div>
+                    </li> 
+                    <li class="products__item pe-0">
+                      <div class="products__block">
+                        <div class="products__img-box">
+                          <ul class="products__functional-btn functional-btn d-flex align-items-center list-unstyled">
+                            <li class="functional-btn__item"><a class="functional-btn__link" href="#"><i class="bi bi-eye"></i></a></li>
+                            <li class="functional-btn__item"><a class="functional-btn__link" href="#"><i class="bi bi-heart"></i></a></li>
+                            <li class="functional-btn__item"><a class="functional-btn__link" href="#"><i class="bi bi-shuffle"></i></a></li>
+                          </ul>
+                          <img class="products__img" src="img/water-melon.jpg" alt="banana">
+                        </div>
+                        <div class="products__texts d-flex flex-column align-items-center">
+                          <a class="products__name text-decoration-none">Home</a>
+                          <a class="products__desc text-decoration-none">Frontier Co-Op Organic Adobo <br> Seasoning Blend</a>
+                          <span class="products__cost">$29.00</span>
+                          <button class="products__btn slider__btn">Add to cart</button>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="products__arrow-btns d-flex alig-items-center justify-content-between">
+                <button class="products__arrow-btn products__arrow-btn--left" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev"><i class="bi bi-arrow-left"></i></button>
+                <button class="products__arrow-btn products__arrow-btn--right" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next"><i class="bi bi-arrow-right"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end products -->
+
+    <!-- start gallery -->
+    <section class="gallery">
+      <div class="main-container">
+        <div class="container">
+          <ul class="gallery__list list-unstyled">
+            <li class="gallery__item">
+              <img class="gallery__img" src="img/fruit-vegatables.jpg" alt="fruit-vegatables">
+              <h3 class="gallery__title">Fruits & <br> Vegetables</h3>
+            </li>
+            <li class="gallery__item">
+              <img class="gallery__img" src="img/bread-eggs.jpg" alt="bread-eggs">
+              <h3 class="gallery__title">Dairy Bread & <br>  Eggs</h3>
+            </li>
+            <li class="gallery__item">
+              <img class="gallery__img" src="img/package-foods.jpg" alt="package-foods">
+              <h3 class="gallery__title">Package <br>   Foods</h3>
+            </li>
+            <li class="gallery__item">
+              <img class="gallery__img" src="img/bevarages.jpg" alt="bevarages">
+              <h3 class="gallery__title">Beverages</h3>
+            </li>
+            <li class="gallery__item">
+              <img class="gallery__img" src="img/healthy.jpg" alt="healthy">
+              <h3 class="gallery__title">Health & <br> Wellness</h3>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- end gallery -->
+
+    <!-- start seller -->
+    <section class="seller">
+      <div class="main-container">
+        <div class="container">
+          <div class="products__contents position-relative">
+            <div class="products__flex d-flex align-items-center justify-content-between mb-4">
+              <h2 class="seller__title products__title">Best Seller</h2>
+              <a class="products__link slider__btn" href="#">Shop All</a>
+            </div>
+            <div id="carouselExampleCaptions" class="products__slide  carousel slide" data-bs-ride="carousel">
+              <div class="products__carusel-inner carousel-inner">
+                <div class="carousel-item active">
+                  <ul class="d-flex align-items-center products__list list-unstyled justify-content-between">
+                    <li class="products__item products__item--sale ps-0">
+                      <div class="products__block">
+                        <div class="products__sales">
+                          <span class="products__online-only">Online only</span>
+                          <span class="products__sale">On sale!</span>
+                        </div>
+                        <div class="products__img-box">
+                          <ul class="products__functional-btn functional-btn d-flex align-items-center list-unstyled">
+                            <li class="functional-btn__item"><a class="functional-btn__link" href="#"><i class="bi bi-eye"></i></a></li>
+                            <li class="functional-btn__item"><a class="functional-btn__link" href="#"><i class="bi bi-heart"></i></a></li>
+                            <li class="functional-btn__item"><a class="functional-btn__link" href="#"><i class="bi bi-shuffle"></i></a></li>
+                          </ul>
+                          <img class="products__img" src="img/carrot.jpg" alt="carrot">
+                          <img class="products__img products__img--lemon" src="img/lemon.jpg" alt="lemon-img">
+                        </div>
+                        <div class="products__texts d-flex flex-column align-items-center">
+                          <a class="products__name text-decoration-none">Nut & Seed</a>
+                          <a class="products__desc text-decoration-none" text-decoration-none>Organic High-Curcumin Turmeric Powder</a>
+                          <span class="products__cost">$22.00</span>
+                          <button class="products__btn slider__btn">Add to cart</button>
+                        </div>
+                      </div>
+                    </li>  
+                    <li class="products__item">
+                      <div class="products__block">
+                        <div class="products__img-box">
+                          <ul class="products__functional-btn functional-btn d-flex align-items-center list-unstyled">
+                            <li class="functional-btn__item"><a class="functional-btn__link" href="#"><i class="bi bi-eye"></i></a></li>
+                            <li class="functional-btn__item"><a class="functional-btn__link" href="#"><i class="bi bi-heart"></i></a></li>
+                            <li class="functional-btn__item"><a class="functional-btn__link" href="#"><i class="bi bi-shuffle"></i></a></li>
+                          </ul>
+                          <img class="products__img" src="img/lemon.jpg" alt="lemon">
+                        </div>
+                        <div class="products__texts d-flex flex-column align-items-center">
+                          <a class="products__name text-decoration-none">Tomatoes</a>
+                          <a class="products__desc text-decoration-none " >Grassfed Organic Turmeric <br> Superghee</a>
+                          <span class="products__cost">$15.00</span>
+                          <button class="products__btn slider__btn">Add to cart</button>
+                        </div>
+                      </div>
+                    </li> 
+                    <li class="products__item">
+                      <div class="products__block">
+                        <div class="products__img-box">
+                          <ul class="products__functional-btn functional-btn d-flex align-items-center list-unstyled">
+                            <li class="functional-btn__item"><a class="functional-btn__link" href="#"><i class="bi bi-eye"></i></a></li>
+                            <li class="functional-btn__item"><a class="functional-btn__link" href="#"><i class="bi bi-heart"></i></a></li>
+                            <li class="functional-btn__item"><a class="functional-btn__link" href="#"><i class="bi bi-shuffle"></i></a></li>
+                          </ul>
+                          <img class="products__img" src="img/apple.jpg" alt="apple">
+                        </div>
+                        <div class="products__texts d-flex flex-column align-items-center">
+                          <a class="products__name text-decoration-none">Home</a>
+                          <a class="products__desc text-decoration-none">Pamela's Products Artisan Blend <br> Flour Gluten Free</a>
+                          <span class="products__cost">$29.00</span>
+                          <button class="products__btn slider__btn">Add to cart</button>
+                        </div>
+                      </div>
+                    </li> 
+                    <li class="products__item pe-0">
+                      <div class="products__block">
+                        <div class="products__img-box">
+                          <ul class="products__functional-btn functional-btn d-flex align-items-center list-unstyled">
+                            <li class="functional-btn__item"><a class="functional-btn__link" href="#"><i class="bi bi-eye"></i></a></li>
+                            <li class="functional-btn__item"><a class="functional-btn__link" href="#"><i class="bi bi-heart"></i></a></li>
+                            <li class="functional-btn__item"><a class="functional-btn__link" href="#"><i class="bi bi-shuffle"></i></a></li>
+                          </ul>
+                          <img class="products__img" src="img/banana.jpg" alt="banana">
+                        </div>
+                        <div class="products__texts d-flex flex-column align-items-center">
+                          <a class="products__name text-decoration-none">Home</a>
+                          <a class="products__desc text-decoration-none">Frontier Co-Op Organic Adobo <br> Seasoning Blend</a>
+                          <span class="products__cost">$29.00</span>
+                          <button class="products__btn slider__btn">Add to cart</button>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="carousel-item">
+                  <ul class="d-flex align-items-center products__list list-unstyled justify-content-between">
+                    <li class="products__item ps-0">
+                      <div class="products__block">
+                        <div class="products__img-box">
+                          <ul class="products__functional-btn functional-btn d-flex align-items-center list-unstyled">
+                            <li class="functional-btn__item"><a class="functional-btn__link" href="#"><i class="bi bi-eye"></i></a></li>
+                            <li class="functional-btn__item"><a class="functional-btn__link" href="#"><i class="bi bi-heart"></i></a></li>
+                            <li class="functional-btn__item"><a class="functional-btn__link" href="#"><i class="bi bi-shuffle"></i></a></li>
+                          </ul>
+                          <img class="products__img" src="img/monion.jpg" alt="carrot">
+                        </div>
+                        <div class="products__texts d-flex flex-column align-items-center">
+                          <a class="products__name text-decoration-none">Home</a>
+                          <a class="products__desc text-decoration-none">Organic High-Curcumin Turmeric Powder</a>
+                          <span class="products__cost">$22.00</span>
+                          <button class="products__btn slider__btn">Add to cart</button>
+                        </div>
+                      </div>
+                    </li>  
+                    <li class="products__item">
+                      <div class="products__block">
+                        <div class="products__img-box">
+                          <ul class="products__functional-btn functional-btn d-flex align-items-center list-unstyled">
+                            <li class="functional-btn__item"><a class="functional-btn__link" href="#"><i class="bi bi-eye"></i></a></li>
+                            <li class="functional-btn__item"><a class="functional-btn__link" href="#"><i class="bi bi-heart"></i></a></li>
+                            <li class="functional-btn__item"><a class="functional-btn__link" href="#"><i class="bi bi-shuffle"></i></a></li>
+                          </ul>
+                          <img class="products__img" src="img/potato.jpg" alt="lemon">
+                        </div>
+                        <div class="products__texts d-flex flex-column align-items-center">
+                          <a class="products__name text-decoration-none">Home</a>
+                          <a class="products__desc text-decoration-none " >Grassfed Organic Turmeric <br> Superghee</a>
+                          <span class="products__cost">$15.00</span>
+                          <button class="products__btn slider__btn">Add to cart</button>
+                        </div>
+                      </div>
+                    </li> 
+                    <li class="products__item">
+                      <div class="products__block">
+                        <div class="products__img-box">
+                          <ul class="products__functional-btn functional-btn d-flex align-items-center list-unstyled">
+                            <li class="functional-btn__item"><a class="functional-btn__link" href="#"><i class="bi bi-eye"></i></a></li>
+                            <li class="functional-btn__item"><a class="functional-btn__link" href="#"><i class="bi bi-heart"></i></a></li>
+                            <li class="functional-btn__item"><a class="functional-btn__link" href="#"><i class="bi bi-shuffle"></i></a></li>
+                          </ul>
+                          <img class="products__img" src="img/pomidor.jpg" alt="apple">
+                        </div>
+                        <div class="products__texts d-flex flex-column align-items-center">
+                          <a class="products__name text-decoration-none">Home</a>
+                          <a class="products__desc text-decoration-none">Pamela's Products Artisan Blend <br> Flour Gluten Free</a>
+                          <span class="products__cost">$29.00</span>
+                          <button class="products__btn slider__btn">Add to cart</button>
+                        </div>
+                      </div>
+                    </li> 
+                    <li class="products__item pe-0">
+                      <div class="products__block">
+                        <div class="products__img-box">
+                          <ul class="products__functional-btn functional-btn d-flex align-items-center list-unstyled">
+                            <li class="functional-btn__item"><a class="functional-btn__link" href="#"><i class="bi bi-eye"></i></a></li>
+                            <li class="functional-btn__item"><a class="functional-btn__link" href="#"><i class="bi bi-heart"></i></a></li>
+                            <li class="functional-btn__item"><a class="functional-btn__link" href="#"><i class="bi bi-shuffle"></i></a></li>
+                          </ul>
+                          <img class="products__img" src="img/water-melon.jpg" alt="banana">
+                        </div>
+                        <div class="products__texts d-flex flex-column align-items-center">
+                          <a class="products__name text-decoration-none">Home</a>
+                          <a class="products__desc text-decoration-none">Frontier Co-Op Organic Adobo <br> Seasoning Blend</a>
+                          <span class="products__cost">$29.00</span>
+                          <button class="products__btn slider__btn">Add to cart</button>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="products__arrow-btns d-flex alig-items-center justify-content-between">
+                <button class="products__arrow-btn products__arrow-btn--left"  type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev"><i class="bi bi-arrow-left"></i></button>
+                <button class="products__arrow-btn products__arrow-btn--right" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next"><i class="bi bi-arrow-right"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end seller -->
+
+    <!-- start store -->
+    <section class="store">
+      <div class="main-container">
+        <div class="container">
+          <div class="store__contents">
+            <div class="mb-5 row justify-content-between">
+              <div class="store__col col-xl-6 col-lg-6 col-md-6 col-sm-12 p-0">
+                <div class="store__img-box">
+                  <img class="store__img" src="img/padimdor-girl.jpg" alt="padimdor-girl">
+                </div>
+              </div>
+              <div class="store__col col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                <h2 class="store__title">A shop for good people by good people</h2>
+                <p class="store__desc mb-3">Buy natural, sustainable and chemicalfree products from local sellers across the country.</p>
+                <p class="store__desc mb-3">We are a strong community of 100,000+ customers and 600+ sellers who aspire to be good, do good, and spread goodness. We are a democratic, self-sustaining, two-sided marketplace which thrives on trust and is built on community and quality content.</p>
+                <a class="store__link slider__btn" href="#">Store Location </a>
+              </div>
+            </div>
+            <div class="row  flex-row-reverse  justify-content-between">
+              <div class="store__col col-xl-6 col-lg-6 col-md-6 col-sm-12 ps-5">
+                <div class="store__img-box">
+                  <img class="store__img" src="img/store-poteto.jpg" alt="store-poteto">
+                </div>
+              </div>
+              <div class="col-xl-6  customers d-flex justify-content-center ps-0 flex-column col-lg-6 col-md-6 col-sm-12 ">
+                  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <div class="customers__contents">
+                          <h2 class="customers__title">Why customer love us</h2>
+                          <p class="customers__desc">“I have been a regular customer in Freshio and the reason is I get a variety of organic products and it gives me many options to choose from and the Quality of the produce is good.”</p>
+                          <span class="customers__name">Pragya - Bellandur Store</span>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="customers__contents">
+                          <h2 class="customers__title">Why customer love us</h2>
+                          <p class="customers__desc">“I have been a regular customer in Freshio and the reason is I get a variety of organic products and it gives me many options to choose from and the Quality of the produce is good.”</p>
+                          <span class="customers__name">Pragya - Bellandur Store</span>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="customers__contents">
+                          <h2 class="customers__title">Why customer love us</h2>
+                          <p class="customers__desc">“I have been a regular customer in Freshio and the reason is I get a variety of organic products and it gives me many options to choose from and the Quality of the produce is good.”</p>
+                          <span class="customers__name">Pragya - Bellandur Store</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="customers__btns d-flex align-items-center">
+                    <span class="customers__btn customers__btn--active" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></span>
+                    <span class="customers__btn" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></span>
+                    <span class="customers__btn" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></span>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end store -->
+    
+    <!-- start partnior -->
+    <section class="partnior overflow-hidden">
+      <div class="main-container">
+        <div class="container">
+          <div id="carouselExampleInterval" class="carousel  partnior__slide position-relative slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <ul class="partnior__list list-unstyled d-flex alig-items-center justify-content-between">
+                  <li class="partnior__item">
+                    <div class="partnior__img-box">
+                      <img class="partnior__img" src="img/100natural.jpg" alt="100natural">
+                    </div>
+                  </li>
+                  <li class="partnior__item">
+                    <div class="partnior__img-box">
+                      <img class="partnior__img" src="img/organic.jpg" alt="organic">
+                    </div>
+                  </li>
+                  <li class="partnior__item">
+                    <div class="partnior__img-box">
+                      <img class="partnior__img" src="img/natural-beauty.jpg" alt="natural-beauty">
+                    </div>
+                  </li>
+                  <li class="partnior__item">
+                    <div class="partnior__img-box">
+                      <img class="partnior__img" src="img/eat.jpg" alt="eat">
+                    </div>
+                  </li>
+                  <li class="partnior__item">
+                    <div class="partnior__img-box">
+                      <img class="partnior__img" src="img/eco.jpg" alt="eco">
+                    </div>
+                  </li>
+                  <li class="partnior__item">
+                    <div class="partnior__img-box">
+                      <img class="partnior__img" src="img/natural-beauty2.jpg" alt="natural-beauty">
+                    </div>
+                  </li>
+                </ul>
+                <div class="products__arrow-btns d-flex alig-items-center justify-content-between">
+                  <button class="products__arrow-btn partnior__slider-btn partnior__slider-btn--left products__arrow-btn--left" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev"><i class="bi bi-arrow-left"></i></button>
+                  <button class="products__arrow-btn partnior__slider-btn partnior__slider-btn--right products__arrow-btn--right" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next"><i class="bi bi-arrow-right"></i></button>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <ul class="partnior__list list-unstyled d-flex alig-items-center justify-content-between">
+                  <li class="partnior__item">
+                    <div class="partnior__img-box">
+                      <img class="partnior__img" src="img/100natural.jpg" alt="100natural">
+                    </div>
+                  </li>
+                  <li class="partnior__item">
+                    <div class="partnior__img-box">
+                      <img class="partnior__img" src="img/organic.jpg" alt="organic">
+                    </div>
+                  </li>
+                  <li class="partnior__item">
+                    <div class="partnior__img-box">
+                      <img class="partnior__img" src="img/natural-beauty.jpg" alt="natural-beauty">
+                    </div>
+                  </li>
+                  <li class="partnior__item">
+                    <div class="partnior__img-box">
+                      <img class="partnior__img" src="img/eat.jpg" alt="eat">
+                    </div>
+                  </li>
+                  <li class="partnior__item">
+                    <div class="partnior__img-box">
+                      <img class="partnior__img" src="img/eco.jpg" alt="eco">
+                    </div>
+                  </li>
+                  <li class="partnior__item">
+                    <div class="partnior__img-box">
+                      <img class="partnior__img" src="img/natural-beauty2.jpg" alt="natural-beauty">
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="products__arrow-btns d-flex alig-items-center justify-content-between">
+                <button class="products__arrow-btn partnior__slider-btn partnior__slider-btn--left products__arrow-btn--left" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev"><i class="bi bi-arrow-left"></i></button>
+                <button class="products__arrow-btn partnior__slider-btn partnior__slider-btn--right products__arrow-btn--right" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next"><i class="bi bi-arrow-right"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end partnior -->
+
+    <!--start support  -->
+    <section class="support">
+      <div class="main-container">
+        <div class="container">
+          <div class="support__row row justify-content-between">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+              <div class="support__contents">
+                <div class="support__texts support__contents--tell">
+                  <span class="support__sub-title">Phone Support</span>
+                  <h3 class="support__work-time">Call us 24/7</h3>
+                  <div class="d-flex flex-column">
+                    <a class="support__tell" href="tel:+998918008866991">(1800)-88-66-991</a>
+                    <a class="support__email" href="mailto:contact@example.com">contact@example.com</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+              <div class="support__contents ">
+                <div class="support__texts support__contents--email">
+                  <span class="support__sub-title">Daily Updates</span>
+                  <h3 class="support__work-time">subscribe us</h3>
+                  <p class="support__desc">Sign up and get a voucher of worth $250.00</p>
+                  <form class="support__form" action="https://echo.htmlacademy.ru/" method="post">
+                    <label class="support__label" for="user-email">
+                      <input class="support__inp" type="email" name="user-email" placeholder="Email address..." required id="user-email" autocomplete="off">
+                    </label>
+                    <button class="support__btn"><i class="bi bi-arrow-right"></i></button>
+                  </form>  
+                </div>
+              </div>
+            </div>
+          </div>  
+        </div>
+      </div>
+    </section>
+    <!--end support  -->
+  </main>
+  <!-- end main -->
+
+  <!-- start footer -->
+  <footer class="footer">
+    <div class="main-container">
+      <div class="container">
+        <div class="footer__row row ">
+          <div class="footer__contents col-xl-3 col-lg-3 col-md-4 col-sm-12">
+            <h2 class="footer__title">Store Location</h2>
+            <p class="footer__desc">9066 Green Lake Drive Chevy<br>Chase, MD 20815</p>
+            <div class="d-flex flex-column">
+              <span class="footer__day">Monday - Saturday:</span>
+              <time class="footer__time mb-2" datetime="2021-05-12">8:00 am - 4:00pm</time>
+              <span class="footer__day">Sunday:</span>
+              <time  class="footer__time" datetime="2021-05-12">9:00 am - 5:00pm</time>
+            </div>
+          </div>
+          <ul class="footer__contents list-unstyled footer__list col-xl-2 col-lg-2 col-md-4 col-sm-12 ">
+            <li class="footer__item">
+              <h2 class="footer__title">Information</h2>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="about.html">About us</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Blog</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Check out</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="contact.html">Contact</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Service</a>
+            </li>
+          </ul>
+          <ul class="footer__contents list-unstyled footer__list col-xl-2 col-lg-2 col-md-4 col-sm-12 ">
+            <li class="footer__item">
+              <h2 class="footer__title">My Account</h2>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">My Account</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="contact.html">Contact</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Shopping cart</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Shop</a>
+            </li>
+          </ul>
+          <ul class="footer__contents list-unstyled footer__list col-xl-2 col-lg-2 col-md-4 col-sm-12 ">
+            <li class="footer__item">
+              <h2 class="footer__title">categories</h2>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Fruits & Vegetables</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Dairy Products</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Package Foods</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Beverage</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Beverage</a>
+            </li>
+          </ul>
+          <div class="footer__contents col-xl-3 col-lg-3 col-md-4 col-sm-12">
+            <h2 class="footer__title">accept payment</h2>
+            <img class="footer__img mb-5" src="img/footer-cards.png" alt="footer-cards">
+            <h3 class="footer__title">follow us</h3>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p class="footer__bottom--copyright">Copyright © 2021 <span>Freshio</span>.All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- end footer -->
+
+  <!-- script start -->
   <script src="js/main.js"></script>
+   <!-- script end -->
 </body>
 </html>

@@ -1,0 +1,81 @@
+.services {
+
+    &__list {
+        border-bottom: 1px  solid #e2e2e2;
+    }
+
+    &__item {
+        padding: 60px 15px;
+        position: relative;
+
+        &::before{
+            content: "";
+            width: 0;
+            height: 3px;
+            background: $color-only-texts;
+            position:absolute;
+            left: 0;
+            bottom: 0;
+            transition: width 0.4s ease;
+        }
+
+        &:hover::before{
+            width: 100%;
+        }
+
+        &:nth-child(1) .services__contents::before{
+            background-image: url("../../img/curated.png");
+        }
+
+        &:nth-child(2) .services__contents::before{
+            background-image: url("../../img/handmade.png");
+        }
+
+        &:nth-child(3) .services__contents::before{
+            background-image: url("../../img/natural.png");
+        }
+
+        &:nth-child(4) .services__contents::before{
+            background-image: url("../../img/shipping.png");
+        }
+    }
+
+    &__title {
+        @include services-title();
+        margin-bottom: 10px !important;
+        
+    }
+
+    &__desc {
+        @include services-desc();
+    }
+
+    &__contents{
+        width: 250px;
+        padding-left: 80px;
+        position: relative;
+        margin: 0 auto;
+
+        &::before{
+            content: "";
+            position:absolute;
+            left: 0;
+            top: 50%;
+            transform: translate(0,-50%);
+            width: 62px;
+            height: 64px;
+        }
+    }
+}
+
+@media screen and (max-width:576px){
+    .services__item{
+        &:not(:last-child){
+            padding-bottom: 0;
+        }
+
+        &::before{
+            display: none;
+        }
+    }
+}

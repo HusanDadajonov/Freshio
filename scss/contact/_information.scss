@@ -1,0 +1,42 @@
+.information {
+    margin-bottom: 32px;
+
+    &__title {
+        @include contact-title;
+        margin-bottom: 2rem !important;
+    }
+
+    &__location {
+        position: relative;
+        padding-left: 50px;
+        padding-bottom: 16px;
+        margin-bottom: 16px;
+        border-bottom: 1px solid rgba(0,0,0,.1);
+
+        &::before{
+            content: "\f3c5";
+            @include contact-icon;
+        }
+    }
+
+    &__place {
+        @include place;
+    }
+
+    &__email {
+        @include place;
+        position: relative;
+        padding-left: 50px;
+
+        &::before{
+            content: "\f0e0";
+            @include contact-icon;
+            font-size: 30px;
+            transform: translate(0,-50%)
+        }
+    }
+
+    &__email--link {
+        @include place;
+    }
+}

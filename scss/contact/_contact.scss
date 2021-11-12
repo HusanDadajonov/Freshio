@@ -1,0 +1,122 @@
+.contact {
+
+    &__row {
+        padding-top: 40px;
+        padding-bottom: 100px;
+    }
+
+
+    &__form-block {
+        padding: 36px;
+        border: 1px solid rgba(0,0,0,.125);
+    }
+
+    &__title {
+        @include contact-title();
+        margin-bottom: 1.5rem !important;
+    }
+
+    &__inputs-box {
+        margin-bottom: 32px !important;
+    }
+
+    &__label {
+        @include contact-label();
+    }
+
+    &__select {
+        @include inputs();
+        background: #ebebeb ;
+        -webkit-appearance: none;    
+        background-image: url("../../img/select-arrow.png");
+        background-repeat: no-repeat;
+        background-position: right 5px center;
+        background-size: 20px 20px;
+    }
+
+    &__form-flex{
+        margin-bottom: 16px;
+    }
+
+
+    &__inp {
+        @include inputs();
+    }
+
+    &__inp--file-bg{
+        background: #eceeef;
+        cursor:no-drop;
+        height: 40px;
+    }
+
+    &__inp--file {
+        display:none;
+    }
+
+    &__label-btn {
+        color: #fff;
+        font-size: .6875rem;
+        font-weight: 400;
+        margin-left: 0;
+        padding: 12px 15px;
+        text-transform: uppercase;
+        background: $color-general;
+        border-radius: 0 5px 5px 0;
+        position:absolute;
+        right: -1px;
+        top: -1px;
+        cursor: pointer;
+    }
+
+    &__span {
+        font-size: 14px;
+        color: #878787;
+        display: inline-block;
+        margin-left: 30px;
+    }
+
+    &__textarea {
+        @include inputs();
+        width: 650px;
+        height: 80px;
+    }
+
+    &__btn {
+        display: block;
+        color: #fff;
+        background-color: #282d35;
+        border:none;
+        font-size: 12px;
+        font-weight: 700;
+        padding: 10px 30px;
+        border-radius: 30px;
+        transition: background 0.4s ease;
+        margin-left: auto;
+
+        &:hover{
+            background: $color-general;
+        }
+    }
+}
+
+@media screen and (max-width:768px){
+    .contact__col{
+        padding: 0;
+    }
+
+    .contact__form-flex{
+        flex-direction: column;
+        align-items: flex-start !important;
+    }
+
+    .contact__select,
+    .contact__inp,
+    .contact__textarea{
+        width: 100%;
+    }
+
+
+    .contact__span{
+        margin-left: 0;
+    }
+}
