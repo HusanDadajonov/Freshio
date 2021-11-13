@@ -1,3 +1,6 @@
+/* FONTS */
+@import url("http://db.onlinewebfonts.com/c/eb5b5ee332420add9a40ee988cb6ac37?family=Mazzard+H");
+@import url("http://fonts.cdnfonts.com/css/greatest-richmond-alternate-one");
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -5,8 +8,6 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-@import url("http://db.onlinewebfonts.com/c/eb5b5ee332420add9a40ee988cb6ac37?family=Mazzard+H");
-@import url("http://fonts.cdnfonts.com/css/greatest-richmond-alternate-one");
 html {
   line-height: 1.15;
   /* 1 */
@@ -343,7 +344,6 @@ template {
   display: none;
 }
 
-/* FONTS */
 /* GENERAL */
 html {
   -webkit-box-sizing: border-box;
